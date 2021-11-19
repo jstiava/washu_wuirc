@@ -1,0 +1,64 @@
+:root {
+       --font-serif: 'Libre Baskerville', 'sans-serif';
+       --font-sans: 'Source Sans Pro', 'sans';
+}
+
+body {
+       padding: 0; margin: 0;
+}
+a {
+       text-decoration: none;
+       color: inherit;
+}
+header, #feature, #content, footer {
+       width: 100%; height: fit-content;
+       background-color: #191919;
+       color: #ffffff;
+}
+header .container {
+       display: flex;
+       width: 90%; height: 100%;
+       justify-content: space-between;
+       padding: 20px 5%;
+       align-items: center;
+}
+header img {
+       height: 60px; width: auto;
+       margin: auto 20px auto 0;
+       padding: 0;
+}
+header .title {
+       display: flex;
+       width: fit-content; height: 100%;
+       margin: 10px 0;
+}
+header .title .content {
+       display: flex;
+       flex-direction: column;
+}
+       header .title h1 {
+              font-family: var(--font-serif);
+              font-size: 30px;
+              letter-spacing: 0.2em;
+              font-weight: 400;
+              margin: 0 0 5px 0;
+       }
+       header .title h2 {
+              font-family: var(--font-serif);
+              font-size: 15px;
+              font-weight: 400;
+              margin: 0;
+       }
+header nav {
+       display: flex;
+       width: fit-content; height: 100%;
+}
+       header nav .index {
+              font-family: var(--font-serif);
+              font-size: 20px;
+              margin: auto 0 auto 40px;
+       }
+       header nav .index:hover {
+              color: #ffcbcb;
+              transition: 0.2s;
+       }
