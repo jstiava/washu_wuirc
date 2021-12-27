@@ -1,0 +1,103 @@
+/* General Stylesheet */
+
+:root {
+  /* Fonts */
+  --font-display: 'Libre Baskerville', 'sans-serif';
+  --font-serif: 'Source Serif Pro', 'sans-serif';
+  --font-sans: 'Source Sans Pro', 'sans';
+  --font-icon: 'Material Icons';
+
+  /* Colors */
+  --color-gen-red: #a51417;
+  --color-gen-red-accent: #ff7b7d;
+  --color-gen-red-light: #ffcecf;
+
+  /* Spacing */
+  --space-headerRoom: 60px;
+}
+
+* {
+  transition-timing-function: ease-in-out;
+}
+
+body {
+  /* Render */
+  display: flex;
+  flex-direction: column;
+
+  /* Sizing */
+  width: 100%; 
+  height: fit-content;
+  padding: 0; 
+  margin: 0;
+
+  /* Back */
+  background-color: #323232;
+
+  /* Text */
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(90%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+@keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+a {
+  text-decoration: unset;
+}
+
+button {
+  /* Render */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Size */
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  /* Background */
+  background-color: transparent;
+
+  /* Text */
+
+  /* Interactive */
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  transition: 0.2s;
+}
+
+
+.material.icon {
+  font-family: var(--font-icon);
+}

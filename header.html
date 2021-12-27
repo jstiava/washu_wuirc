@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+       <link rel="stylesheet" href="stylesheets/style.css">
+       <link rel="stylesheet" href="stylesheets/header.css">
+
+</head>
+<body>
+       <header>
+              <div class="leftHeader">
+                     <div class="wordmark" id="masthead">
+                            <div>WUMUNS</div>
+                            <div>15</div>
+                     </div>
+                     <div id="contents">
+                            <a href="" class="index">Committees</a>
+                     </div>
+
+                     <!-- Adding Contents -->
+                     <script>
+                            const contentList = document.getElementById("contents");
+                            for (var i = 0; i < contentList.children.length; i = i + 2) {
+                                   var newIcon = document.createElement("div");
+                                   newIcon.classList.add('material');
+                                   newIcon.classList.add('icon');
+                                   // newIcon.innerHTML = '•';
+                                   newIcon.innerHTML = 'chevron_right';
+              
+                                   contentList.children[i].after(newIcon);
+                            }
+                     </script>
+
+              </div>
+
+              <nav id="nav">
+                     <div class="container">
+                            <header class="status">
+                                   <div class="leftHeader">
+                                          <div class="wordmark">
+                                                 <div>WUMUNS</div>
+                                                 <div>15</div>
+                                          </div>
+                                   </div>
+                                   <div class="rightHeader">
+                                          <button class="material icon" id="navExit">close</button>
+                                   </div>
+
+                            </header>
+                            <section class="content">
+                                   <div class="container" id="navList">
+                                          <a href="" class="linkToPage">News</a>
+                                          <a href="" class="linkToPage">Secretariat</a>
+                                          <a href="" class="linkToPage">Committees</a>
+                                          <a href="" class="linkToPage">Philanthropy</a>
+                                          <a href="" class="linkToPage">Guides</a>
+                                          <a href="" class="linkToPage">Guides</a>
+                                          <a href="" class="linkToPage">Philanthropy</a>
+                                   </div>
+                                   <div class="container" id="navGrid">
+                                          <div class="navCard">
+                                                 <h6>Leadership • Nov 7</h6>
+                                                 <h2>Spera '24 elected 15th WUMUNS Secretary-General</h2>
+                                                 <!-- <button>Read On</button> -->
+                                          </div>
+                                          <div class="navCard">
+                                                 <h6>Leadership • Dec 2</h6>
+                                                 <h2>Meet the 2021 WUMUNS Secretariat</h2>
+                                          </div>
+                                          <div class="navCard">
+                                                 <h6>Leadership • Dec 12</h6>
+                                                 <h2>10-Member Secretariat Board holds First Meeting</h2>
+                                          </div>
+                                          <div class="navCard">
+                                                 <h6>Accessibility • Dec 26</h6>
+                                                 <h2>New WUMUNS15 Website Begins Development</h2>
+                                          </div>
+                                          <div class="navCard">
+                                                 <h6>Covid-19</h6>
+                                                 <h2>Secretariat Board Contemplates Omicron Variant</h2>
+                                          </div>
+                                   </div>
+                            </section>
+                     </div>
+              </nav>
+              
+              <!-- Opening Nav Bar -->
+              <script>
+                     document.getElementById('masthead').addEventListener("click", function() {
+                            document.getElementById('nav').classList.add("open");
+
+                            const navLinkList = document.getElementById('navList');
+                            for (var i = 0; i < navLinkList.children.length; i++) {
+                                   navLinkList.children[i].style.display = 'flex';
+                            }
+                     });
+
+                     document.getElementById('navExit').addEventListener("click", function() {
+                            document.getElementById('nav').classList.remove('open');
+                     });
+              </script>
+
+
+              <div class="rightHeader">
+                     <button class="material icon">search</button>
+              </div>
+       </header>
+</body>
+</html>

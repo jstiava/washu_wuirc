@@ -1,0 +1,351 @@
+/* Header Stylesheet*/
+
+header {
+  /* Render */
+  display: flex;
+  justify-content: space-between;
+
+  /* Size */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 60px;
+  height: fit-content;
+}
+
+/* Left Header: Top navigation and page header on the left side */
+.leftHeader {
+  /* Render */
+  display: flex;
+  box-sizing: border-box;
+
+  /* Size */
+  width: fit-content; 
+  height: fit-content;
+  padding: 0;
+
+  /* Interact */
+}
+
+/* Wordmark: Says "WUMUNS15" */
+.wordmark {
+  /* Render */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Size */
+  width: 320px;
+  height: 65px;
+
+  /* Border */
+  border-radius: 8px;
+  border: 5px solid #fff;
+
+  /* Background */
+  
+  /* Text */
+  font-family: var(--font-serif);
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  /* Interact */
+  transition: 0.4s;
+  cursor: pointer;
+}
+.wordmark:hover {
+  background-color: #fff;
+  transition: 0.4s;
+}
+.wordmark:hover div:first-child {
+  color: #000;
+  transition: 0.4s;
+}
+.wordmark:hover div:nth-child(2) {
+  color: var(--color-gen-red);
+  transition: 0.4s;
+}
+          .wordmark div:first-child {
+            /* Text */
+            color: #fff;
+            transition: 0.4s;
+          }
+
+          .wordmark div:nth-child(2) {
+            /* Text */
+            color: var(--color-gen-red-accent);
+            transition: 0.4s;
+          }
+
+/* CONTENTS */
+#contents, #contentsOfNav {
+  /* Render */
+  display: flex;
+
+  /* Sizing */
+  width: fit-content;
+  height: fit-content;
+}
+          #contents .index:first-child, #contentsOfNav .index:first-child {
+            margin: 0 0 0 40px;
+          }
+          #contents *, #contentsOfNav * {
+            /* Render */
+            display: flex;
+            align-items: center;
+
+            /* Size */
+            width: fit-content;
+            height: 75px;
+            margin: 0;
+            padding: 0;
+
+            /* Text */
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 0.05em;
+          }
+
+          /* Each index of the header contents */
+          #contents .index, #contentsOfNav .index {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: 0.4s;
+          }
+          #contents .index:hover, #contentsOfNav .index:hover {
+            color: #ffffff80;
+            transition: 0.4s;
+          }
+
+          /* Style for chevron between each index */
+          #contents .material.icon, #contentsOfNav .material.icon {
+            font-size: 26px;
+            margin: 0 20px;
+          }
+
+/* Right Header */
+.rightHeader {
+  /* Render */
+  display: flex;
+  align-items: center;
+}
+          .rightHeader button {
+            /* Text */
+            font-size: 30px;
+            color: #fff;
+          }
+          .rightHeader button:hover {
+            color: #ffffff80;
+          }
+
+
+/* Navigation View */
+nav {
+  /* Render */
+  position: absolute;
+  top: 0; right: 0;
+  display: none;  /* Open onclick */
+  justify-content: center; align-items: center;
+
+  /* Size */
+  width: 100%;
+  height: 100vh;
+
+  /* Background */
+  background-image: url(https://wumuns.com/wp-content/uploads/2018/02/St.Louis_.jpg);
+  /* background-image: url(https://lv7ms1pq6dm2sea8j1mrajzw-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/WUSTL-1200x675.jpg); */
+  background-size: cover;
+  background-position: top;
+
+}
+nav {
+  /* Interactive */
+  animation: 0.5s popIn ease-in-out;
+  animation-fill-mode: both;
+}
+nav.open {
+  /* Render */
+  display: flex;
+}
+nav.closing {
+  /* Interactive */
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation: 0.5s popIn ease-in-out;
+  display: none;
+}
+nav .wordmark {
+  background: transparent;
+  border-color: #ffffff99;
+}
+/* nav .wordmark div:first-child {
+  color: #000;
+  transition: 0.4s;
+}
+nav .wordmark div:nth-child(2) {
+  color: var(--color-gen-red);
+  transition: 0.4s;
+} */
+
+nav > .container {
+  /* Sizing */
+  display: flex;
+  flex-direction: column;
+
+  /* Size */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  /* Background */
+  background-color: #00000099;
+
+  /* Text */
+}
+
+nav header {
+  /* Interative */
+  animation: 0.5s smooth ease-in-out both 0.5s;
+}
+
+nav section.content {
+  /* Render */
+  display: flex;
+  justify-content: space-between;
+
+  /* Sizing */
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  max-height: 70%;
+  padding: 0 calc(var(--space-headerRoom) + 50px);
+  margin: -20px 0 0 0;
+}
+nav section .container {
+  /* Render */
+  display: flex;
+  flex-direction: column;
+
+  /* Sizing */
+  width: fit-content;
+  max-width: 70%;
+  height: fit-content;
+}
+
+nav a.linkToPage {
+  /* Render */
+  display: none;
+
+  /* Sizing */
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 0;
+  margin: 0;
+
+  /* Text */
+  font-family: var(--font-serif);
+  font-size: 40px;
+  color: #ffffff99;
+
+  /* Interactive */
+  animation: 0.4s popUp ease-in-out;
+  animation-fill-mode: both;
+  transition: 0.2s;
+}
+nav a.linkToPage:hover {
+  color: #ffffff;
+  transition: 0.2s;
+}
+nav a.linkToPage:nth-child(1) {
+  animation-delay: 0.5s;
+}
+nav a.linkToPage:nth-child(2) {
+  animation-delay: 0.6s;
+}
+nav a.linkToPage:nth-child(3) {
+  animation-delay: 0.7s;
+}
+nav a.linkToPage:nth-child(4) {
+  animation-delay: 0.8s;
+}
+nav a.linkToPage:nth-child(5) {
+  animation-delay: 0.9s;
+}
+nav a.linkToPage:nth-child(6) {
+  animation-delay: 1s;
+}
+nav a.linkToPage:nth-child(7) {
+  animation-delay: 1.1s;
+}
+
+/* NavGrid */
+#navGrid {
+  /* Render */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+
+  /* Sizing */
+  width: 100%;
+  height: fit-content;
+  margin: 0px 75px 0 0;
+}
+.navCard {
+  display: flex;
+  flex-direction: column;
+
+  /* Sizing */
+  box-sizing: border-box;
+  height: fit-content;
+  width: 1fr;
+  border-radius: 5px;
+  padding: 30px 25px;
+
+  /* Background */
+  background-color: #202020;
+}
+.navCard h6 {
+
+  /* Size */
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  /* Text */
+  font-family: var(--font-sans);
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: var(--color-gen-red-accent);
+  text-transform: uppercase;
+}
+.navCard h2 {
+
+  /* Size */
+  margin: 0;
+  padding: 0;
+
+  /* Text */
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+.navCard button {
+  display: flex;
+
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  margin: 15px 0 0 0;
+
+  /* Background */
+
+  /* Text */
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}

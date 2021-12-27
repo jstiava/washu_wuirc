@@ -1,16 +1,194 @@
+.entry-content p:first-child {
+       display: none !important;
+}
+.entry-content {
+       height: 100vh !important;
+       overflow: hidden !important;
+}
+
 :root {
        --font-serif: 'Libre Baskerville', 'sans-serif';
        --font-sans: 'Source Sans Pro', 'sans';
 }
 
-body {
+header, footer {
+       display: none !important;
+}
+.site-content {
+       all: unset;
+}
+
+@keyframes slideIn {
+       from {
+              transform: translateY(10%);
+              opacity: 0;
+       }
+       to {
+              transform: translateY(0);
+              opacity: 1;
+       }
+}
+@keyframes dissolveIn {
+       from {
+              opacity: 0;
+       }
+       to {
+              opacity: 1;
+       }
+}
+@keyframes dissolveLess {
+       from {
+              opacity: 0;
+       }
+       to {
+              opacity: 0.8;
+       }
+}
+@keyframes dissolveBackdrop {
+       from {
+              opacity: 0;
+       }
+       to {
+              opacity: 0.05;
+       }
+}
+
+h6 {
+       font-family: 'Libre Baskerville', 'sans-serif';
+       font-size: 25px;
+       font-weight: normal;
+       color: #ff8284;
+       font-style: italic;
+       letter-spacing: 0.01em;
+       margin: 0;
+}
+
+#backdropImage {
+       position: absolute;
+       top: 0; right: 0;
+       height: 200%;
+       transform: translateX(-30%) translateY(-55%);
+       -o-transform: translateX(-30%) translateY(-55%);
+       -moz-transform: translateX(-30%) translateY(-55%);
+       -webkit-transform: translateX(-30%) translateY(-55%);
+       animation: 0.5s dissolveBackdrop ease-in-out;
+       animation-fill-mode: both;
+}
+
+.myCover {
+       position: absolute;
+       top: 0; right: 0;
        padding: 0; margin: 0;
 }
 #overlay {
-       width: 100%; height: 100vh;
-       background-color: #00;
+       width: 100%; height: fit-content;
+       min-height: 100vh;
+       justify-content: center; align-items: center;
+       background-color: #a51417;
 }
 .container {
-       display: flex;
+       display: flex; flex-direction: column;
+       align-items: center;
        width: 100%; height: fit-content;
+}
+
+#post-3 {
+       height: 100vh !important;
+       padding: 0 !important;
+       margin: 0 !important;
+       overflow: hidden !important;
+}
+
+body {
+       margin: 0;
+       padding: 0;
+}
+main {
+       height: 0 !important;
+       padding: 0 !important; margin: 0 !important;
+}
+#logo {
+       margin: 25vh 0 0 0;
+}
+#rOne {
+	display: flex;
+	justify-content: left;
+       height: 4vw;
+}
+#washuLogo {
+	height: inherit;
+	width: auto;
+       margin: 0 25px 0 0;
+}
+#organization {
+       display: flex;
+       align-items: center;
+       line-height: 125%;
+}
+#rOne {
+       display: flex;
+
+       font-family: 'Libre Baskerville', 'sans-serif';
+       font-size: 1.5vw;
+       color: #fff;
+       animation: 0.6s dissolveLess ease-in-out;
+       animation-delay: 1s;
+       animation-fill-mode: both;
+
+}
+#rTwo {
+       display: flex;
+       width: fit-content; height: fit-content;
+
+       font-family: 'Libre Baskerville', 'sans-serif';
+       font-size: 8vw;
+       letter-spacing: 0.03em;
+       line-height: normal;
+       color: #fff;
+       margin: 0; padding: 0;
+
+       animation: 0.7s slideIn ease-in-out;
+       animation-delay: 0.5s;
+       animation-fill-mode: both;
+}
+#yearmark {
+       color: #ff8284;
+}
+#jscontent {
+       display: flex;
+       justify-content: center; align-items: center;
+       width: 100%; height: fit-content;
+       animation: 0.5s dissolveIn ease-in-out;
+       animation-delay: 1.5s;
+       animation-fill-mode: both;
+       color: #ff8284;
+}
+
+@media screen and (max-width: 55em) {
+       #backdropImage {
+              width: 80vw; height: auto;
+       }
+       #rOne {
+              height: 25px;
+		margin: 0 0 5px 0;
+       }
+       #washuLogo {
+              margin: 0 10px 0 0;
+       }
+       #organization {
+              font-size: 10px;
+       }
+       #rTwo {
+              font-size: 32px;
+		margin: 0 0 5px;
+       }
+       h6 {
+              font-size: 12px;
+       }
+}
+@media screen and (max-width: 75em) {
+       #backdropImage {
+              width: 95vw; height: auto;
+              transform: translateX(-20%) translateY(-10%);
+       }
 }
