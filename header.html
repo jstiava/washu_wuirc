@@ -17,103 +17,185 @@
 
 </head>
 <body>
+       <!-- Block-Header: Two columns, space-between -->
        <header>
-              <div class="leftHeader">
-                     <div class="wordmark" id="masthead">
+              <!-- Layout: Side(left) -->
+              <section class="side">
+
+                     <!-- Component: header__site-wordmark -->
+                     <div id="header__site-wordmark">
                             <div>WUMUNS</div>
                             <div>15</div>
                      </div>
-                     <div id="contents">
-                            <a href="" class="index">Committees</a>
+                     <button id="js-nav-exit" class="material icon">close</button>
+
+                     <!-- Component: header__page-contents -->
+                     <!-- <div id="header__page-contents">
+                            <a href="" class="index">Workshops</a>
+                            <a href="" class="index">Delegate Guide</a>
+                     </div> -->
+              </section>
+
+              <!-- Layout: Side(right) -->
+              <section class="side">
+                     <div id="header-cta">
+                            <button href="" class="register">Register Now</button>
                      </div>
-
-                     <!-- Adding Contents -->
-                     <script>
-                            const contentList = document.getElementById("contents");
-                            for (var i = 0; i < contentList.children.length; i = i + 2) {
-                                   var newIcon = document.createElement("div");
-                                   newIcon.classList.add('material');
-                                   newIcon.classList.add('icon');
-                                   // newIcon.innerHTML = '•';
-                                   newIcon.innerHTML = 'chevron_right';
-              
-                                   contentList.children[i].after(newIcon);
-                            }
-                     </script>
-
-              </div>
-
-              <nav id="nav">
-                     <div class="container">
-                            <header class="status">
-                                   <div class="leftHeader">
-                                          <div class="wordmark">
-                                                 <div>WUMUNS</div>
-                                                 <div>15</div>
-                                          </div>
-                                   </div>
-                                   <div class="rightHeader">
-                                          <button class="material icon" id="navExit">close</button>
-                                   </div>
-
-                            </header>
-                            <section class="content">
-                                   <div class="container" id="navList">
-                                          <a href="" class="linkToPage">News</a>
-                                          <a href="" class="linkToPage">Secretariat</a>
-                                          <a href="" class="linkToPage">Committees</a>
-                                          <a href="" class="linkToPage">Philanthropy</a>
-                                          <a href="" class="linkToPage">Guides</a>
-                                          <a href="" class="linkToPage">Guides</a>
-                                          <a href="" class="linkToPage">Philanthropy</a>
-                                   </div>
-                                   <div class="container" id="navGrid">
-                                          <div class="navCard">
-                                                 <h6>Leadership • Nov 7</h6>
-                                                 <h2>Spera '24 elected 15th WUMUNS Secretary-General</h2>
-                                                 <!-- <button>Read On</button> -->
-                                          </div>
-                                          <div class="navCard">
-                                                 <h6>Leadership • Dec 2</h6>
-                                                 <h2>Meet the 2021 WUMUNS Secretariat</h2>
-                                          </div>
-                                          <div class="navCard">
-                                                 <h6>Leadership • Dec 12</h6>
-                                                 <h2>10-Member Secretariat Board holds First Meeting</h2>
-                                          </div>
-                                          <div class="navCard">
-                                                 <h6>Accessibility • Dec 26</h6>
-                                                 <h2>New WUMUNS15 Website Begins Development</h2>
-                                          </div>
-                                          <div class="navCard">
-                                                 <h6>Covid-19</h6>
-                                                 <h2>Secretariat Board Contemplates Omicron Variant</h2>
-                                          </div>
-                                   </div>
-                            </section>
-                     </div>
-              </nav>
-              
-              <!-- Opening Nav Bar -->
-              <script>
-                     document.getElementById('masthead').addEventListener("click", function() {
-                            document.getElementById('nav').classList.add("open");
-
-                            const navLinkList = document.getElementById('navList');
-                            for (var i = 0; i < navLinkList.children.length; i++) {
-                                   navLinkList.children[i].style.display = 'flex';
-                            }
-                     });
-
-                     document.getElementById('navExit').addEventListener("click", function() {
-                            document.getElementById('nav').classList.remove('open');
-                     });
-              </script>
-
-
-              <div class="rightHeader">
-                     <button class="material icon">search</button>
-              </div>
+              </section>
        </header>
+
+       <!-- Block-Nav: Full Screen View -->
+       <nav id="js-nav"><div class="wrap">
+
+              <!-- Component: nav__nav-list -->
+              <section id="nav__nav-list">
+                     <div class="nav-element">
+                            <a class="nav-element__link" id="js-nav-focus" href="">About</a>
+                            <span class="material icon">chevron_right</span>
+                     </div>
+                     <div class="nav-element">
+                            <a class="nav-element__link" href="">in St Louis</a>
+                            <span class="material icon">chevron_right</span>
+                     </div>
+                     <div class="nav-element">
+                            <a class="nav-element__link" href="">Committees</a>
+                            <span class="material icon">chevron_right</span>
+                     </div>
+                     <div class="nav-element">
+                            <a class="nav-element__link" href="">Workshops</a>
+                            <span class="material icon">chevron_right</span>
+                     </div>
+                     <div class="nav-element">
+                            <a class="nav-element__link" href="">Secretariat</a>
+                            <span class="material icon">chevron_right</span>
+                     </div>
+                     <div class="nav-element">
+                            <a class="nav-element__link" href="">Partners</a>
+                            <span class="material icon">chevron_right</span>
+                     </div>
+              </section>
+
+              <!-- Component: nav__nav-content -->
+              <section id="nav__nav-content">
+                     <div class="full-row">
+                            <div class="graphic timeline">
+                                   <div class="timeline__anchor">
+                                          <div class="timeline__line-baseline"></div>
+                                          <div class="timeline__line-progress"></div>
+                                          <div class="timeline__event-wrap">
+                                                 <a class="timeline__event completed">
+                                                        <div class="event-title">Registration<br>Opens</div>
+                                                        <div class="event-status"><span></span></div>
+                                                        <div class="event-date">April 31, 2021</div>
+                                                 </a>
+                                                 <a class="timeline__event">
+                                                        <div class="event-title">Late Registration<br>Opens</div>
+                                                        <div class="event-status"><span></span></div>
+                                                        <div class="event-date">July 31, 2021</div>
+                                                 </a>
+                                                 <a class="timeline__event">
+                                                        <div class="event-title">Committees<br>Release</div>
+                                                        <div class="event-status"><span></span></div>
+                                                        <div class="event-date">September 1, 2021</div>
+                                                 </a>
+                                                 <a class="timeline__event">
+                                                        <div class="event-title">Position Papers<br>Due</div>
+                                                        <div class="event-status"><span></span></div>
+                                                        <div class="event-date">September 15, 2021</div>
+                                                 </a>
+                                                 <a class="timeline__event">
+                                                        <div class="event-title">WUMUNS XV<br>Opening Ceremonies</div>
+                                                        <div class="event-status"><span></span></div>
+                                                        <div class="event-date">September 31, 2021</div>
+                                                 </a>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="left-card">
+                            <article><a href=""><div class="wrap">
+                                   <span class="article__title">Delegate Immersion Powered through Elite Web Design</span>
+                            </div></a></article>
+                     </div>
+                     <div class="mid-card">
+
+                     </div>
+                     <div class="right-card">
+
+                     </div>
+              </section>
+       </div></nav>
+
+       <!-- JavaScript Functionality for Header -->
+       <script>
+
+              // Adding Contents
+              try {
+                     const contentList = document.getElementById("header__page-contents");
+                     for (var i = 0; i < contentList.children.length; i = i + 2) {
+                            var newIcon = document.createElement("div");
+                            newIcon.classList.add('material');
+                            newIcon.classList.add('icon');
+                            // newIcon.innerHTML = '•';
+                            newIcon.innerHTML = 'circle';
+
+                            contentList.children[i].after(newIcon);
+                     }
+              }
+              catch(err) {
+
+              }
+
+              // Opening Navigation View
+              document.getElementById('header__site-wordmark').addEventListener("click", function() {
+                     document.getElementById('js-nav').classList.add("open");
+                     document.getElementById('js-nav-exit').style.display = "flex";
+                     document.getElementById('nav__nav-content').style.display = 'grid';
+
+                     try {
+                            document.getElementById('header__page-contents').style.display = "none"; 
+                     }
+                     catch(err) {
+
+                     }
+                     finally {
+                            const navList = document.getElementById('nav__nav-list');
+                            for (var i = 0; i < navList.children.length; i++) {
+                                   navList.children[i].style.display = 'flex';
+                            }
+                     }
+
+                     setTimeout(function() {
+                            document.getElementById('js-nav-focus').classList.add('js-color-red-accent');
+                            document.getElementById('js-nav-focus').classList.add('js-hover');
+                     }, 1200);
+                     setTimeout(function() {
+                            document.getElementById('js-nav-focus').classList.remove('js-color-red-accent');
+                            document.getElementById('js-nav-focus').classList.remove('js-hover');
+                     }, 2200);
+                     
+              });
+
+
+              // Closing Navigation View
+              document.getElementById('js-nav-exit').addEventListener("click", function() {
+                     document.getElementById('js-nav').classList.remove('open');
+                     document.getElementById('js-nav-exit').style.display = "none";
+                     document.getElementById('nav__nav-content').style.display = 'none';
+
+                     try {
+                            document.getElementById('header__page-contents').style.display = "flex";
+                     }
+                     catch(err) {
+
+                     }
+                     
+              });
+       </script>
+
+       <!-- JavaScript Functionality for Components -->
+       <script>
+
+       </script>
 </body>
 </html>

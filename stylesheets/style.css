@@ -13,30 +13,12 @@
   --color-gen-red-light: #ffcecf;
 
   /* Spacing */
-  --space-headerRoom: 60px;
+  --space-head-full: 175px;
+  --space-head: 60px;
+  --space-nav: 50px;
 }
 
-* {
-  transition-timing-function: ease-in-out;
-}
-
-body {
-  /* Render */
-  display: flex;
-  flex-direction: column;
-
-  /* Sizing */
-  width: 100%; 
-  height: fit-content;
-  padding: 0; 
-  margin: 0;
-
-  /* Back */
-  background-color: #323232;
-
-  /* Text */
-}
-
+/* Animations */
 @keyframes popIn {
   from {
     opacity: 0;
@@ -65,7 +47,64 @@ body {
     transform: translateY(0%);
   }
 }
+@keyframes floatX {
+  from {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 
+* {
+  transition-timing-function: ease-in-out;
+}
+
+body {
+  /* Render */
+  display: flex;
+  flex-direction: column;
+
+  /* Sizing */
+  width: 100%; 
+  height: fit-content;
+  padding: 0; 
+  margin: 0;
+
+  /* Back */
+  background-color: #1a1a1a;
+
+  /* Text */
+}
+
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+h6 {
+  /* Sizing */
+  margin: 0;
+  padding: 0;
+  
+  /* Text */
+  font-family: var(--font-sans);
+  font-size: 16px;
+}
+
+/* Link Actions */
 a {
   text-decoration: unset;
 }
@@ -79,7 +118,7 @@ button {
   /* Size */
   width: 60px;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   margin: 0;
   padding: 0;
@@ -100,4 +139,25 @@ button:hover {
 
 .material.icon {
   font-family: var(--font-icon);
+}
+
+/* Sections */
+section {
+  /* Render */
+  display: flex;
+  box-sizing: border-box;
+
+  /* Interact */
+}
+section.side {
+  /* Size */
+  width: fit-content; 
+  height: fit-content;
+  padding: 0;
+}
+section.full {
+  /* Size */
+  width: 100%; 
+  height: fit-content;
+  padding: 0;
 }
