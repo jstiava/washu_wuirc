@@ -50,101 +50,163 @@
               <!-- Component: nav__nav-list -->
               <section id="nav__nav-list">
                      <div class="nav-element">
-                            <a class="nav-element__link" id="js-nav-focus" href="">About</a>
+                            <a class="nav-element__link" id="js-nav-focus" onclick="changeNavContent('0')">About</a>
                             <span class="material icon">chevron_right</span>
                      </div>
                      <div class="nav-element">
-                            <a class="nav-element__link" href="">in St Louis</a>
+                            <a class="nav-element__link" onclick="changeNavContent('1')">in St Louis</a>
                             <span class="material icon">chevron_right</span>
                      </div>
                      <div class="nav-element">
-                            <a class="nav-element__link" href="">Committees</a>
+                            <a class="nav-element__link" onclick="changeNavContent('2')">Committees</a>
                             <span class="material icon">chevron_right</span>
                      </div>
                      <div class="nav-element">
-                            <a class="nav-element__link" href="">Workshops</a>
+                            <a class="nav-element__link" onclick="changeNavContent('3')">Workshops</a>
                             <span class="material icon">chevron_right</span>
                      </div>
                      <div class="nav-element">
-                            <a class="nav-element__link" href="">Secretariat</a>
+                            <a class="nav-element__link" onclick="changeNavContent('4')">Secretariat</a>
                             <span class="material icon">chevron_right</span>
                      </div>
                      <div class="nav-element">
-                            <a class="nav-element__link" href="">Partners</a>
+                            <a class="nav-element__link" onclick="changeNavContent('5')">Partners</a>
                             <span class="material icon">chevron_right</span>
                      </div>
               </section>
 
               <!-- Component: nav__nav-content -->
               <section id="nav__nav-content">
-                     <div class="nav-content__head-left">
-                            <article style="background-image: url(https://wumuns.com/wp-content/uploads/2018/02/Advantages-1.jpg);"><div class="wrap">
-                                   <div class="article__title">
-                                          <a>Fast-paced, Engaging Crisis Committees</a>
-                                   </div>
-                                   <p>We take pride in our focus on small, crisis committees designed to engage and encite each delegate.</p>
-                            </div></article>
-                     </div>
-                     <div class="nav-content__head-mid">
-                            <article style="background-image: url(https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg);"><div class="wrap">
-                                   <div class="article__title">
-                                          <a>Leading Committee Immersion</a>
-                                   </div>
-                                   <p>A completed presentation overhaul, personalizes committee design from preparing online to the committee room.</p>
-                            </div></article>
-                     </div>
-                     <div class="nav-content__head-right">
-                            <article style="background-image: url(https://financialaid.wustl.edu/wp-content/uploads/2019/07/HDR_PBAF5537_051.jpg);"><div class="wrap">
-                                   <div class="article__title">
-                                          <a>Breaking down financial barriers</a>
-                                   </div>
-                                   <p>Expense should not prevent your delegation from attending WUMUNS. Learn more about Financial Aid options and how to apply.</p>
-                            </div></article>
-                     </div>
-                     <div class="left-card">
-                            
-                     </div>
-                     <div class="mid-card">
-                            
-                     </div>
-                     <div class="right-card">
-                            
-                     </div>
-                     <div class="nav-content__foot">
-                            <div class="graphic timeline">
-                                   <div class="timeline__anchor">
-                                          <div class="timeline__line-baseline"></div>
-                                          <div class="timeline__line-progress"></div>
-                                          <div class="timeline__event-wrap">
-                                                 <a class="timeline__event completed">
-                                                        <div class="event-title">Registration<br>Opens</div>
-                                                        <div class="event-status"><span></span></div>
-                                                        <div class="event-date">April 31, 2021</div>
-                                                 </a>
-                                                 <a class="timeline__event">
-                                                        <div class="event-title">Late Registration<br>Opens</div>
-                                                        <div class="event-status"><span></span></div>
-                                                        <div class="event-date">July 31, 2021</div>
-                                                 </a>
-                                                 <a class="timeline__event">
-                                                        <div class="event-title">Committees<br>Release</div>
-                                                        <div class="event-status"><span></span></div>
-                                                        <div class="event-date">September 1, 2021</div>
-                                                 </a>
-                                                 <a class="timeline__event">
-                                                        <div class="event-title">Position Papers<br>Due</div>
-                                                        <div class="event-status"><span></span></div>
-                                                        <div class="event-date">September 15, 2021</div>
-                                                 </a>
-                                                 <a class="timeline__event">
-                                                        <div class="event-title">WUMUNS XV<br>Opening Ceremonies</div>
-                                                        <div class="event-status"><span></span></div>
-                                                        <div class="event-date">September 31, 2021</div>
-                                                 </a>
+
+                     <!-- About -->
+                     <div class="nav-content__selection">
+                            <div class="nav-content__row head">
+                                   <div class="graphic timeline">
+                                          <div class="timeline__anchor">
+                                                 <div class="timeline__line-baseline"></div>
+                                                 <div class="timeline__line-progress"></div>
+                                                 <div class="timeline__event-wrap">
+                                                        <a class="timeline__event completed">
+                                                               <div class="event-title">Registration<br>Opens</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">April 31, 2021</div>
+                                                        </a>
+                                                        <a class="timeline__event">
+                                                               <div class="event-title">Late Registration<br>Opens</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">July 31, 2021</div>
+                                                        </a>
+                                                        <a class="timeline__event">
+                                                               <div class="event-title">Committees<br>Release</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">September 1, 2021</div>
+                                                        </a>
+                                                        <a class="timeline__event">
+                                                               <div class="event-title">Position Papers<br>Due</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">September 15, 2021</div>
+                                                        </a>
+                                                        <a class="timeline__event">
+                                                               <div class="event-title">WUMUNS XV<br>Opening Ceremonies</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">September 31, 2021</div>
+                                                        </a>
+                                                 </div>
                                           </div>
                                    </div>
                             </div>
+                            <div class="nav-content__mid-left">
+                                   <article style="background-image: url(https://wumuns.com/wp-content/uploads/2018/02/Advantages-1.jpg);"><div class="wrap">
+                                          <div class="article__title">
+                                                 <a>Fast-paced, Engaging Crisis Debate</a>
+                                          </div>
+                                          <p>We take pride in our focus on small, crisis committees designed to engage and encite each delegate.</p>
+                                   </div></article>
+                            </div>
+                            <div class="nav-content__mid-mid">
+                                   <article style="background-image: url(https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg);"><div class="wrap">
+                                          <div class="article__title">
+                                                 <a>Leading Committee Immersion</a>
+                                          </div>
+                                          <p>A completed presentation overhaul, personalizes committee design from preparing online to the committee room.</p>
+                                   </div></article>
+                            </div>
+                            <div class="nav-content__mid-right">
+                                   <article style="background-image: url(https://financialaid.wustl.edu/wp-content/uploads/2019/07/HDR_PBAF5537_051.jpg);"><div class="wrap">
+                                          <div class="article__title">
+                                                 <a>Breaking down financial barriers</a>
+                                          </div>
+                                          <p>Expense should not prevent your delegation from attending WUMUNS. Learn more about Financial Aid options and how to apply.</p>
+                                   </div></article>
+                            </div>
                      </div>
+
+                     <!-- in St. Louis -->
+                     <div class="nav-content__selection" style="display: none;">
+                            <div class="nav-content__row mid">
+                                   <div class="graphic timeline">
+                                          <div class="timeline__anchor">
+                                                 <div class="timeline__line-baseline"></div>
+                                                 <div class="timeline__line-progress"></div>
+                                                 <div class="timeline__event-wrap">
+                                                        <a class="timeline__event completed">
+                                                               <div class="event-title">Registration<br>Opens</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">April 31, 2021</div>
+                                                        </a>
+                                                        <a class="timeline__event">
+                                                               <div class="event-title">Late Registration<br>Opens</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">July 31, 2021</div>
+                                                        </a>
+                                                        <a class="timeline__event">
+                                                               <div class="event-title">Committees<br>Release</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">September 1, 2021</div>
+                                                        </a>
+                                                        <a class="timeline__event">
+                                                               <div class="event-title">Position Papers<br>Due</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">September 15, 2021</div>
+                                                        </a>
+                                                        <a class="timeline__event">
+                                                               <div class="event-title">WUMUNS XV<br>Opening Ceremonies</div>
+                                                               <div class="event-status"><span></span></div>
+                                                               <div class="event-date">September 31, 2021</div>
+                                                        </a>
+                                                 </div>
+                                          </div>
+                                   </div>
+                            </div>
+                            <div class="nav-content__head-left">
+                                   <article style="background-image: url(https://chickenoutchicken.com/wp-content/uploads/2020/09/chicken-out-spicy-1600x1000.jpg);"><div class="wrap">
+                                          <div class="article__title">
+                                                 <a>Food places that we love in our area</a>
+                                          </div>
+                                          <p>We compiled recommendations from various staffers of WUMUNS. A trip to St. Louis would not be complete without these favorites.</p>
+                                   </div></article>
+                            </div>
+                            <div class="nav-content__head-mid">
+                                   <article style="background-image: url(https://www.theparkwayhotel.com/sites/default/files/styles/page_hero/public/hero-images/1.jpg?itok=TqJQxufG);"><div class="wrap">
+                                          <div class="article__title">
+                                                 <a>Parkway Hotel Information</a>
+                                          </div>
+                                          <p>Preview your hotel arrangements in St. Louis' historic Central West End</p>
+                                   </div></article>
+                            </div>
+                            <div class="nav-content__head-right">
+                                   <article style="background-image: url(https://wustl.edu/wp-content/uploads/2020/06/WashU_night_drone_5.20-2-600x400.jpg);"><div class="wrap">
+                                          <div class="article__title">
+                                                 <a>Start your college search at WashU</a>
+                                          </div>
+                                          <p>Washington University is ranked #14 nationally, #12 best in Political Science, with an industry leading medical school.</p>
+                                   </div></article>
+                            </div>
+                     </div>
+                     <div class="nav-content__selection" style="display: none;"></div>
+                     <div class="nav-content__selection" style="display: none;"></div>
+                     <div class="nav-content__selection" style="display: none;"></div>
+                     <div class="nav-content__selection" style="display: none;"></div>
               </section>
        </div></nav>
 
@@ -171,7 +233,7 @@
               // Opening Navigation View
               document.getElementById('header__site-wordmark').addEventListener("click", function() {
                      document.getElementById('js-nav').classList.add("open");
-                     document.getElementById('js-nav-exit').style.display = "flex";
+                     document.getElementById('js-nav-exit').style.display = 'flex';
                      document.getElementById('nav__nav-content').style.display = 'grid';
 
                      try {
@@ -198,12 +260,28 @@
                      
               });
 
+              // Operating Navigation Content
+              function changeNavContent(a) {
+                     var a = parseInt(a);
+                     for (var i = 0; i < document.getElementById('nav__nav-list').children.length; i++) {
+                            if (!(i == a)) {
+                                   // console.log(document.getElementById('nav__nav-content').children);
+                                   // console.log(document.getElementById('nav__nav-content').children[i]);
+                                   document.getElementById('nav__nav-content').children[i].style.display = 'none';
+                                   document.getElementById('nav__nav-list').children[i].children[0].classList.remove('js-hover');
+                                   
+                            }
+                     }
+                     document.getElementById('nav__nav-list').children[a].children[0].classList.add('js-hover');
+                     document.getElementById('nav__nav-content').children[a].style.display = 'grid';
+              }
+
 
               // Closing Navigation View
               document.getElementById('js-nav-exit').addEventListener("click", function() {
                      document.getElementById('js-nav').classList.remove('open');
                      document.getElementById('js-nav-exit').style.display = "none";
-                     document.getElementById('nav__nav-content').style.display = 'none';
+                     document.getElementById('nav__nav-content').style.display = "none";
 
                      try {
                             document.getElementById('header__page-contents').style.display = "flex";
@@ -211,7 +289,9 @@
                      catch(err) {
 
                      }
-                     
+                     finally {
+                            changeNavContent('0');
+                     }
               });
        </script>
 
