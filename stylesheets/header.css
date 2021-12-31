@@ -168,9 +168,9 @@ header > section {
   color: #fff;
 
   /* Animation */
-  animation: 0.5s smooth ease-in-out;
+  animation: 0.5s floatX ease-in-out;
   animation-fill-mode: both;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 #js-nav-exit:hover {
   color: #ffffff80;
@@ -226,6 +226,8 @@ nav .wrap {
 
   /* Background */
   background-color: #00000099;
+  background-image: linear-gradient(#00000050, #00000099);
+  background-size: cover;
 
   /* Text */
 }
@@ -367,13 +369,13 @@ nav .wrap {
   /* Animation */
   animation: 0.5s popUp ease-in-out;
   animation-fill-mode: both;
-  animation-delay: 1.2s;
+  animation-delay: 1.15s;
 }
 #nav__nav-content > div {
   border-radius: 4px;
 }
 
-.full-row {
+.nav-content__foot {
   /* Render */
   display: flex;
   flex-direction: column;
@@ -386,13 +388,14 @@ nav .wrap {
   padding: 10px;
 
   /* Back */
-  background-color: rgb(34, 34, 34);
+  background-color: #00000099;
+
 
   /* Text */
 
   /* Animation */
 }
-.left-card, .mid-card, .right-card {
+.left-card, .mid-card, .right-card, .nav-content__head-left, .nav-content__head-mid, .nav-content__head-right {
   /* Render */
   display: flex;
   flex-direction: column;
@@ -410,17 +413,28 @@ nav .wrap {
 
   /* Animation */
 }
+.nav-content__head-left, .nav-content__head-mid, .nav-content__head-right {
+  background-color: transparent !important;
+}
+.nav-content__head-left {
+  grid-area: 5 / 1 / 11 / 1;
+}
+.nav-content__head-mid {
+  grid-area: 5 / 2 / 11 / 2;
+}
+.nav-content__head-right {
+  grid-area: 5 / 3 / 11 / 3;
+}
 .left-card {
-  grid-area: 5 / 1 / 10 / 1;
+  grid-area: 11 / 1 / 14 / 1;
 }
 .mid-card {
-  grid-area: 5 / 2 / 10 / 2;
+  grid-area: 11 / 2 / 14 / 2;
 }
 .right-card {
-  grid-area: 5 / 3 / 10 / 3;
+  grid-area: 11 / 3 / 14 / 3;
 }
 
-/* Graph: Timeline */
 #nav__nav-content h6 {
   /* Text */
   font-family: var(--font-sans);
@@ -488,6 +502,7 @@ nav .wrap {
   /* When an event is completed, these visual changes are triggered */
   .timeline__event.completed .event-status span {
     background-color: var(--color-gen-red-accent);
+    transform: scale(90%);
   }
   .timeline__event.completed .event-title {
     color: var(--color-gen-red-accent);
@@ -572,40 +587,49 @@ nav .wrap {
 
 /* Graphic Article */
 article {
+  /* Render */
+  cursor: pointer;
+
   /* Size */
   width: 100%;
   height: 100%;
 
   /* Back */
-  background-image: url(https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg);
-  background-size: cover;
-  background-position: center;
+  background-size: auto 100%;
+  background-position: top;
+  
+  /* Animation */
+  transition: 0.3s;
 }
 article .wrap {
   /* Render */
   display: flex;
+  justify-content: center;
   flex-direction: column;
 
   /* Size */
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 10%;
+  padding: 7.5%;
 
   /* Back */
   background-image: linear-gradient(to bottom, #00000000, #000);
 }
-article span {
+article a {
 
   /* Text */
   font-family: var(--font-serif);
-  font-size: 32px;
+  font-size: 29px;
+  font-weight: 600;
   color: #fff;
   text-decoration: none;
 
   /* Size */
   width: calc(100%);
   height: auto;
+  margin: 0;
+  padding: 0;
 
   /* Back */
   background-image: linear-gradient(to right, var(--color-gen-red-accent), var(--color-gen-red-accent));
@@ -614,9 +638,9 @@ article span {
   background-position: right bottom;
 
   /* Interactive */
-  transition: background-size 250ms ease-in-out;
+  transition: background-size 350ms ease-in-out;
 }
-article:hover span {
+article:hover a {
 
   /* Back */
   background-size: 100% 3px;
@@ -626,5 +650,23 @@ article:hover span {
   color: #ffffff;
 
   /* Animation */
-  transition: background-size 150ms ease-in-out;
+  transition: background-size 350ms ease-in-out;
 }
+article p {
+
+  /* Sizing */
+  margin: 10px 0 0 0;
+  padding: 0;
+
+  /* Text */
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: rgb(201, 201, 201);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  transition: 0.2s;
+}
+/* article:hover p {
+  color: #ffffff;
+  transition: 0.2s;
+} */
