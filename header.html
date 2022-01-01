@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
        <meta charset="UTF-8">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
 
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+              rel="stylesheet">
 
        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -16,6 +18,7 @@
        <link rel="stylesheet" href="stylesheets/header.css">
 
 </head>
+
 <body>
        <!-- Block-Header: Two columns, space-between -->
        <header>
@@ -45,255 +48,364 @@
        </header>
 
        <!-- Block-Nav: Full Screen View -->
-       <nav id="js-nav"><div class="wrap">
+       <nav id="js-nav">
+              <div class="wrap">
 
-              <!-- Component: nav__nav-list -->
-              <section id="nav__nav-list">
-                     <div class="nav-element">
-                            <a class="nav-element__link" id="js-nav-focus" onclick="changeNavContent('0')">About</a>
-                            <span class="material icon">chevron_right</span>
-                     </div>
-                     <div class="nav-element">
-                            <a class="nav-element__link" onclick="changeNavContent('1')">in St Louis</a>
-                            <span class="material icon">chevron_right</span>
-                     </div>
-                     <div class="nav-element">
-                            <a class="nav-element__link" onclick="changeNavContent('2')">Committees</a>
-                            <span class="material icon">chevron_right</span>
-                     </div>
-                     <div class="nav-element">
-                            <a class="nav-element__link" onclick="changeNavContent('3')">Workshops</a>
-                            <span class="material icon">chevron_right</span>
-                     </div>
-                     <div class="nav-element">
-                            <a class="nav-element__link" onclick="changeNavContent('4')">Secretariat</a>
-                            <span class="material icon">chevron_right</span>
-                     </div>
-                     <div class="nav-element">
-                            <a class="nav-element__link" onclick="changeNavContent('5')">Partners</a>
-                            <span class="material icon">chevron_right</span>
-                     </div>
-              </section>
+                     <!-- Component: nav__nav-list -->
+                     <section id="nav__nav-list">
+                            <div class="nav-element">
+                                   <a class="nav-element__link" id="js-nav-focus"
+                                          onclick="changeNavContent('0')">About</a>
+                                   <span class="material icon">chevron_right</span>
+                            </div>
+                            <div class="nav-element">
+                                   <a class="nav-element__link" onclick="changeNavContent('1')">in St Louis</a>
+                                   <span class="material icon">chevron_right</span>
+                            </div>
+                            <div class="nav-element">
+                                   <a class="nav-element__link" onclick="changeNavContent('2')">Committees</a>
+                                   <span class="material icon">chevron_right</span>
+                            </div>
+                            <div class="nav-element">
+                                   <a class="nav-element__link" onclick="changeNavContent('3')">Workshops</a>
+                                   <span class="material icon">chevron_right</span>
+                            </div>
+                            <div class="nav-element">
+                                   <a class="nav-element__link" onclick="changeNavContent('4')">Secretariat</a>
+                                   <span class="material icon">chevron_right</span>
+                            </div>
+                            <div class="nav-element">
+                                   <a class="nav-element__link" onclick="changeNavContent('5')">Partners</a>
+                                   <span class="material icon">chevron_right</span>
+                            </div>
+                     </section>
 
-              <!-- Component: nav__nav-content -->
-              <section id="nav__nav-content">
+                     <!-- Component: nav__nav-content -->
+                     <section id="nav__nav-content">
 
-                     <!-- About -->
-                     <div class="nav-content__selection">
-                            <div class="nav-content__row head">
-                                   <div class="graphic timeline">
-                                          <div class="timeline__anchor">
-                                                 <div class="timeline__line-baseline"></div>
-                                                 <div class="timeline__line-progress"></div>
-                                                 <div class="timeline__event-wrap">
-                                                        <a class="timeline__event completed">
-                                                               <div class="event-title">Registration<br>Opens</div>
-                                                               <div class="event-status"><span></span></div>
-                                                               <div class="event-date">April 31, 2021</div>
-                                                        </a>
-                                                        <a class="timeline__event">
-                                                               <div class="event-title">Late Registration<br>Opens</div>
-                                                               <div class="event-status"><span></span></div>
-                                                               <div class="event-date">July 31, 2021</div>
-                                                        </a>
-                                                        <a class="timeline__event">
-                                                               <div class="event-title">Committees<br>Release</div>
-                                                               <div class="event-status"><span></span></div>
-                                                               <div class="event-date">September 1, 2021</div>
-                                                        </a>
-                                                        <a class="timeline__event">
-                                                               <div class="event-title">Position Papers<br>Due</div>
-                                                               <div class="event-status"><span></span></div>
-                                                               <div class="event-date">September 15, 2021</div>
-                                                        </a>
-                                                        <a class="timeline__event">
-                                                               <div class="event-title">WUMUNS XV<br>Opening Ceremonies</div>
-                                                               <div class="event-status"><span></span></div>
-                                                               <div class="event-date">September 31, 2021</div>
-                                                        </a>
+                            <!-- About -->
+                            <div class="nav-content__selection">
+                                   <div class="nav-content__row head">
+                                          <div class="graphic timeline">
+                                                 <div class="timeline__anchor">
+                                                        <div class="timeline__line-baseline"></div>
+                                                        <div class="timeline__line-progress"></div>
+                                                        <div class="timeline__event-wrap">
+                                                               <a class="timeline__event">
+                                                                      <div class="event-title">Registration<br>Opens
+                                                                      </div>
+                                                                      <div class="event-status"><span></span></div>
+                                                                      <div class="event-date">April 31, 2021</div>
+                                                               </a>
+                                                               <a class="timeline__event">
+                                                                      <div class="event-title">Late
+                                                                             Registration<br>Opens</div>
+                                                                      <div class="event-status"><span></span></div>
+                                                                      <div class="event-date">July 31, 2021</div>
+                                                               </a>
+                                                               <a class="timeline__event">
+                                                                      <div class="event-title">Committees<br>Release
+                                                                      </div>
+                                                                      <div class="event-status"><span></span></div>
+                                                                      <div class="event-date">September 1, 2021</div>
+                                                               </a>
+                                                               <a class="timeline__event">
+                                                                      <div class="event-title">Position Papers<br>Due
+                                                                      </div>
+                                                                      <div class="event-status"><span></span></div>
+                                                                      <div class="event-date">September 15, 2021</div>
+                                                               </a>
+                                                               <a class="timeline__event">
+                                                                      <div class="event-title">WUMUNS XV<br>Opening
+                                                                             Ceremonies</div>
+                                                                      <div class="event-status"><span></span></div>
+                                                                      <div class="event-date">September 31, 2021</div>
+                                                               </a>
+                                                        </div>
                                                  </div>
                                           </div>
                                    </div>
-                            </div>
-                            <div class="nav-content__card mid-left">
-                                   <article style="background-image: url(https://wumuns.com/wp-content/uploads/2018/02/Advantages-1.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Fast-paced, Engaging Crisis Debate</a>
-                                          </div>
-                                          <p>We take pride in our focus on small, crisis committees designed to engage and encite each delegate.</p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card mid-mid">
-                                   <article style="background-image: url(https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Leading Committee Immersion</a>
-                                          </div>
-                                          <p>A completed presentation overhaul, personalizes committee design from preparing online to the committee room.</p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card mid-right">
-                                   <article style="background-image: url(https://financialaid.wustl.edu/wp-content/uploads/2019/07/HDR_PBAF5537_051.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Breaking down financial barriers</a>
-                                          </div>
-                                          <p>Expense should not prevent your delegation from attending WUMUNS. Learn more about Financial Aid options and how to apply.</p>
-                                   </div></article>
-                            </div>
-                     </div>
-
-                     <!-- in St. Louis -->
-                     <div class="nav-content__selection" style="display: none;">
-                            <div class="nav-content__note mid-right">
-                                   <div class="graphic image" style="background-image: url(https://localist-images.azureedge.net/photos/30971134930856/hero/52e506523ab36519dfe586d53509d02092ac071c.jpg);">
-                                          <a href="https://wustl.edu/" class="wrap">
-                                                 <img src="https://dl.boxcloud.com/api/2.0/internal_files/847256047432/versions/909004496632/representations/png_paged_2048x2048/content/1.png?access_token=1!U9fYLitBqdp-EiewkZHsp_rBwQxcHYXn6s2hC267GI34ostgJmwl8li-XkwkhaVcxsmpBKVnYPAbKn0rOJiuGULH6Vsr7XrLWubPbN5XayWJyrm_RcEHoTKQQEiY2iDFfkEwY6mfpe0dk2HUFEKMp7lVaHSzwqPjbznL0V8mvkftfbsMDPovxS3dhvd29eQyEeAK0RR3s4hL3WvckuwrJCbUKROA__X2ZIKs8yAfemcon5MOHGdUQcWSls8Tvzug8deL1bb9Ih8fXqZKlgegWGWUKkxJsBmrGrg7YtB0xid-XxIR6yryJ_Zj0TrBJ6ClQAm88jR-NutB3upYnshX5NRwZChVDWOGhD6eu2j-BenEL_ALQJkQdz8mGT2WNK1WnM44Glr-NLRMQuLh1LuYebubm7jA5CQktdDPHg8iWc3kI3swB6ZMdMaQkAIDx391YY9FH4BbDlwAzI174ePc0OGkD1kV36X4VLJrxSie7cS06aOw86QIrQmizZHrsQIydyxmim92dGdSi4O0PRHp7nCLTLI0NpoTfq_kK3gBNigpb2y1lzPkjmHqrafY_uVq5QhCd_npCzhcmih2LfKfF4G-LOMm8pMxuBr0OB7xWjxnpHcMXQ6U3bh6k202wG0n99G4ulPgCSNzQSz9eDIctfxv3TNs_RTajwBWjWUZE7DlXF_K3aQR-N7sFhCiu3lguA3H7ssyeBmfUqlYYYRE7kbwZOvsert4FWquD6KDx47wRClSjyNwI3wFbw..&shared_link=https%3A%2F%2Fwustl.app.box.com%2Fs%2Fkods33dj1hu24azctxnbvh8mbfm1q9hc&box_client_name=box-content-preview&box_client_version=2.81.0" alt="">
-                                          </a>
+                                   <div class="nav-content__card mid-left">
+                                          <article
+                                                 style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGBgYHB4cHBwcHB8fHB8cGBgcHB4cHB4cIS4nHh4rIRoaJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzQrJCs0NDQ0NDo0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQAGB//EAEUQAAIBAgMEBwUFBQYGAwEAAAECEQAhAxIxBEFRYQUicYGRobETMsHR8AYUQlKSU2Jy0uEWI4KisvEVJDNDY6NUc8I0/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QAIxEAAgICAgMBAQEBAQAAAAAAAAECEQMhEjETQVFhIoFxBP/aAAwDAQACEQMRAD8A0cLot2AMi9WwthdTBE050ZjMBc2p9mzXmK6JSknTOZRi1aAYeHHyqRsiOZKweIqhPHUU3szrvNTdodUxLH6OAMlRyIt41p7NgymQ+7EUTGxVIikU22Gyi1C20GkgZ2FEYEMddOXzq+39IplyZiDxHpSm0uzMfGPlWdjYe/WapGPLslKXHojExJkzPb8aSCboHfRWQzIEVGU77mumKo5JysphImbrkpzAmrZEKzmltIjzquU6buFXTBpv9ET9ULnDINFuRTK7LzFMIAvCs5BjEQg1dAaYK1K4dDkMoglWiolGXDoqYVTlIpGINMOjrg0fCwacw9nqUpFoxFEwKOmz09h7PTOHs1TciyiY+Js1BbZ63sTZ6A+z0FIDiYzYWUcz5ClHwq2cXBpTEwqpGROUTKZKEyVovhUu2HVoyISiJFKoUp32Y3mPWhslUUiTiKlKqUpopVSlGwNCmU10GmDh12SmsTiLFKjLTPs6jLRsWheKjLypgpUZK1mofwli8GoxNoZQTmAAuSdABWwej+dY32j2IpgO1tI/UwXTfrXHzjtnocJaRmbJ9oEfGKZrFQF4FgWmO0EeFeh2fGE18qwwrMIIkqHFitjYGb3mvpqYLDURSwkpXY+RODVGmQatkB1FL4OOy217aY+8r+IRoO8mB50HFoMZJlMfBDajTQ0sNjM8q00I3GjqBwoKTQXFSMjG2YBIAvxpNNiJNejKjhUJhCdKZZGkI8SbMB+jiNRFUTZTwr1+FhAiDSmP0eJtRWb6B4Ph54bK1EGwNWz9xaq+yIreV+gLCl2Zg6PPCobZGG6ttFeNJFUdjvFDmxvGjJTANHTBp32O+IqMV1RczsFUbyY+jQcwqB2Fg07g4NYf9osEGFDvzVYH+Yg+Va3R/TGE5iSp/eEeYkVGU0/ZdQa9GphYFNps9XwV30Wh2MLvs9KYuDWnQMdREnTWt0YxsXDpHFwqnpHp3BTQl9bKOA586zth6fTEOVxkJ0k9XvO41o5I3ViSg6sM+FS74VabKDcX50J0rojIjKJmNhUI4VabYQ40NsOnUiTiZpw6g4dPnDqjJTqRNxETh1U4dOIARI0v5GD6VPsqbkI4meyV5jb+nFXGXKuYIGUmYnMVnL2ZR217HEwq+anAubaTMDnHPfUs2RxSovgxKTdnt9ixlxEV1mGEideBB5yKcGBzrO+y+ETgDUwx4WvMWHEnxr0H3Wm8lxTJvHUmkiNi6SRllHM2lWtEzubs42kUv9qcV/u5BWQzKDlI45hM7ururzOB9oEAy4iKSDlJQ3m5nI27nm3ir7b0mhTKjvlYg5WDbgd8kGJjXfXn8nR6nEy9j2NQ4ORlgZbANCrcCASYnhX1FNqQ7/I18y+/BRKuAdx0/wBQq3/HnIH9+BAjq5TMbzM3PKN1qaEoq7sScZOqo+nh8M71rx/2m6dZMQJglCqZWJENmYEGDrAHDtry+PtocS+NmOsFpHgTPdQBjJ+0XvIA7vo0XNerBGD90e2f7X4eURgsXi4LBVnfBEkjuoH9sm/Yr+s/KvInFX84+uEC1QMVfz2758aPNA4M9f8A2yf9kn6mq6fbTEGmEni3zryIdPz+vrUe0Text/F9GleSIygz2Z+3GN+zw/8AN/NVf7bY37PD8H/mrx64in8R891ELp+Yz2N6UOcRuEj1bfbbH3Jhjub+euX7aY/5ML9Lfz15FnXiZ/hb0irq6bmnub5UeaCoM9gPtptH5ML9Lfz1H9rsc/hw/wBLfz15dWXifBqupB0JjfY+tJ5EP4z04+12OAYXD/Qf5qy9v6QxMds+JfcALKvYOfGklC8THYfWKdw8MGLfVqSU7GUKO2deRrb2BTwrOwFMx8DWzsyxE+HzqTew6fR6XovamVcs9Ucd3ZW3g4wavI4GNWpsu1X7qrGdE5RNfaNogW1rA6T6RZlKkwDwFdtO1c6zNqxA3b61pZAqBhbfhzWUUi1am1G51nsrLxSL6+BpIyj8G4s09k6WxUQIuUqNJEns1qH+0OL+5+n+tYbYg/e5wDQmccWjsPrVo5KEeJM2W+0WNwT9J/moZ+0WNwT9J/mrFOID+aOIDUNnG8sBus3rT+YHgRvf2ixvyp+k/wA1WxvtI5QgIFcizA2HOCPjXniy7y/g3yvVWZZ95v0sPICj5hXgXw3fs90myOyYr9QiQWkw03vuBk616vAxEcSjK38JB9K+Zl1mczzr7rekRUriKNHbN/C1PHNSojLBydn05sKvmmJhHM1t595ue8CRPZRl6VdZy42KJEG7mx4ToeYvS+Hjzpna+sEnxOpoZMnJDYsXFs1+itqxUUhCqiZtcmYmJEA2151LLiuS2JiNmJ/NoNwssUPYtqRZDhlOozCNOF79lX/4xhcT4VCr9juKs80wCKJA6x1kySFJ/Law8q0OioZs4AAZARBJmY3GIpRXkL1QouSTpBUgExcai43WrQ6MZVMe7ChetpwEE3OmpuaXloaMrdDW3IChkT/QE1lsigszEAKEuWgCcs77fXGtjbrIbiYO+PwnlWHtmGzhwGIzFMoIaBkKkzA3xWWxmtDCoM+7U+AqEyEAhgZVo6xMkAzvvpUo/XLXiWi3GYt4Uts2x5BhyfcV5sbl80RI5jXnQXQzW1QUrCOZC6XmBc8RUnDIZ+tIzKImYgNPZUY+FnR0mC2W9yLE8KKydZ2H4mB0NgA3H+IUPQWv6HNlCZIb3iDl7ieFD29VzDIIXLvBG9txoasZQi2UMCIOrTEctK5nJAzGTBkxE3J4cCKDbqjJf02aGHs4tIMclJm2616Uy9flm+NaK9IqAtj1SfOfnWYXGfN+9PPWjJ6RoabbHMXCWQVUgRfqHXjpbtpTYUGa4kbxE7xu30+Nrw7ypUEAAxMHs52pbZsRUIMkmLgDQyCL77UW7oWOkxzFRchhSDOuWLWtPwqNmw5BtOm6dx3CoxdsDKVAIkzuo2wY4SbEzwpW/wCrKRvi0djJAFovwidb86awlk8AN8W3b+40LaMZSFm0bvnU4Dllkv3UsnbHUf52aGCxFljfff8A0prDkAE0rgjn9eFHdoGulTcvQvFJjaYtqdwsWxPL5VgHGIPvTNO4e1whPCPM00dMzVq0MY203pXFxxfw0pLFx6odoGtN0Fx1otiEMYOvH4GlMXBgEFYI3x20ZsRQZzc9PxcOznU4u1KwI46XrRVXYHFtqjLwEEm0iNIneKrjYYyiFi1zETdaZw3yNJ4RrxihY+0grljdxHEH4U6a4mcXyTA4GGCDImN8TGnhVdrwwNBlE6RG6r7PtSoGB/FbXlUbXtQfh48jWv8AkNPnfo7Cw1KrKyZN8syIa0x5UrtKxyEG0R+JhpTmz7cqqoInKxOo52pLbNoV2kW1tI3sTu7aZ00qEVqbvoO6JDdQ+5+Q6362mnOlsvXvpm9TTg6RSPd/Bl1HK9InGGfNzB1HKmm00qI41JOVjD4a7kIJcgdUiBl0Nra0DDbKuhOlgpO7fTb9IoZtq4YdYcACPWhbKgdCM3CYPlNGbV6BjUq/pGV0odJIW5sQ4PcrC3dWQ+1GdfA2r0nTWzYYCjKJP5QAY5ntrzn3H/yKOI5+NKqYGiybWACHN92m/jmPKPGtvoPFV5gsoIAMQRM6NINjNt1a2P0ztOGwRuk8f3A3WwQ1muJOZgTWz0V0xj5ZbbXeYg+xUegpJJemVjCtmPi9HIQFLsyCSVMEWE8LVk4eFmeE2DGdJjMuAzd8Bb17fb+mXyn/AJvGHVJ6iAHd++K8PidL5h19r6QxNLHECD/W48qZV7Mkel/ssQmc7MAIkZgia8faFY76R2fo/Zc0Y2LsaEkKFRxitJMQVw1IB/xUn0yUw9iwnbBLjEkqMXFL7zr7NUM+6wvoymlOiHzOqexwEVkxPdwwzWwXIOfELupBAMhgbVqQTW+0+zbNsmSFXE9ogdeoEMZmXQzA6vnSPRGNs+NK+yVXAnKVW43kECjfbfZ8z7KdY2ZR/wC7Fn4VldCbORjoRazX/wAJpXVhV0NdI7Xs+G+QYKuRr1VAHLTWndgXZ8VM6oogwwKrKxxtftrz+04JLudes3rWj0Ns5CY+olRGnB6A1NlX6TwA8LgArOuVQTzAitf2ezhPaZFyRM5R4RGs2rzY2O1azYRGygCfeNu8mk5D8PoPA6Qwy0exVRNmIW3bA9K0tpGGi5nUNNlEAk8ZkVi7Lh6MyzY25kVrdMoxyQJEExwmK3I3BEdHYuG7ZThheBgEd9rU9tmPh4UDICx/dGnhaldjxQgUBLgOJtq7LBiRoFIqm3r/AMxJBIGXyvHClUr7HUUtIe2LER5BQK38Ig24xrypv2AAiFiDuvY0vhYwdxAIly+7TIRxp9t07wf9Qo9oD0xLF2tFOUKCRrpHZRsDGV4gaESD9XrLwc2Z4j3ryP3uM2uab2ARiNMTG4QNVpUtjNJmoiA6gb93A86XxttVVMJIzAaATY6W0ort1G7H9TWPiuxQTx8gLeppuhEjVRkZc8CN9haO6s89IJPuCOwT4RVdmJOC/aIHblrOxQQJpmzKOzdfFQJmIXLEi2ondbWkcPpFC3WQAHfA87UJyTs6fxHyJrMxSVtag2FRPSbc+GiSyAz7ohb+WlZ2x7Xhu+VkVSdLKQfKu6UQlMI3MofMLWVgYnXUfvDyNH2CtbNbpXasLBhcis5ExlWw4kx9RQujdpwsUlSiqwvGVb9hig9O7P8A3ncL91K9GJGOm6Z9KPbA9KwvS3SOFhvkXCV2HvWUActLmmei3wcdJVFBFmBVbeVYeNsjNiYxAnK7z2Z2jWnfs9srBsbW62jsOtUSIMBtfTWAHITBVlFs0KJ5gZdO2tfD+7the1yIECkk5FtF9Mtz868sdj6sRePhWns+zH7g6mbFez31Pb50QUBTp3AL3wAENphJ7YAgV6DC2NJJQkKQGAWAL91eDxdnMV77oj3E3yg9TWZjO6bwRh4efFdmOgCxruAJEmL3PhXlBtyX6rC+kA+eWvYfa1ZwByZfiPjXiPY0ULR6rE2zCxHD4vtVQe/lUZoCqgylpAFgSCL3G8EaezbUyM2zNhEYOCC5dcQM+ZG67KfYDOzLiYSZCq5fZrmKwxoOF0akgrjYRgg3XG3GYI9kfCtZl2hmcttOGwcMrKwxCkOrKcq+yhD1muoBueJqKyxj3QHlkzI2npRHzBfdMhZmYOkmACY3wKB9mMBk2hAjoxchCGQkZWIm590iJzDSOEg6SdAi39/g/wDs+OHRP+EYIu2OD/Ck/wCtlpPOvVGWR+x58ZxhYxTGTEOHBBOV8gJCZmTKFZgpQArKWvOUCsPoPDRcUdfRMT8J/YvT7bJsyxdn7WRB4BX9ag7VhrPs0w0JBGa7vDAqYLsQJBIlQDeh50zeQn7RujjZmzROzrHVP7XF5Vl7Jioj5sxMA6AzpzrY6YyZdlk/9gRp+1xeRrNCod0+HyoSzU+grK+hXqsSwJuSdOdO7M6qjqXBLCBCtaJ1461DQNJqUPM+FTeZ90WWRpUDXDX84/S3ypgumQIG0M6Hnyq6KDoSeUUdNlkSTHgPWk89eg+WXwzSo/C696saexmV8oze6I0PrRPY9tcWUWOvdW8/xA8kvgFEUH3h5/KjbSAxJDC/EH4Vcopvm8pog2c7o77UVlb0kVUpMpsWAwhsytE2gydavibfAByloEW1kmdDwimMZAhyo+dYF4i5FxBvS2UVXHye5FKvsRTNJIdQGMkMGmzTupjBxCrlic5b8oPEcdNKNkGtqsmWKtxA0kV+/wBog3DbiYzHf4+XiLFTqqMy7/wmijCBvpUbQjWghoGh7eNJJST0hLaWgaOFRlletHHd3UL2axdh5/Kq4uJHvDL3W8Yg0MYnLwpOUvgvka9DWKFKBVYAqSbgkX5UuqL+JlJ5KfjUq44H1qW7PERQ8r+CvK/gXasVHVBmjII0bly5UmuQQZuL6d9S2IBuXxoTYg4eY+dFZH8JPM0N7btCYjZs2WwEFTu7JpbACI6PnHV3ZWvNuFDOIOX13VC4o3ZfKm8n4K87OdELu2cddmaMrCMxmNKY6P2hMNmOeQwg9VvlS+b90eBqc31Bo+b8EeZgRh4YHvj9LfKmVx8NcF8MuOvvytxnfFVQjfHhPrVjl+gKHnr0DzMxNo2VD/3AP8LWrYwNrCKqyDlULo025GudU3AeVQmEp3U3n10by/hnfaDbmcIiAMpnNEggiMtzuuT3V53Lj7k7dNfGvZHCH5R5/OoyJ+XyNMv/AEL4DyM016f2n8/+VP5a5uncaJ6iv+LECLmZROVTIyjU3CgmFBNhWEMUaX/2owndpz4i1qg7+i2zRbp7aZ/60/4E/krV+6feUw2fEyucNFVsgys77VjIucKAQIVVkaawa8oyE7iB23nstxr2XQmz9TZ/ej/lj4dIY7eHwp47dPoZJnmcHY8V7JhYjxYlELLIN7gW76Yw+iMUkqfZo0MwR8VC5CqWICIWIMKdQK0dr2YewwVzNGfGJBYgHrrqNDpXdCIgxlyqD1cSd/8A2n07rVK4qSVNhoR6ZxGKbJA12cHX/wA2LS+z4WIRp4nlujka2+ksZAmzGBHsBumwxMS3DjSqYikWJEHnqJsb+XKlyS/CsIrsSKPvt48e6qKl9J/iDfOnHYCesdx0mxtuFjceNDfEOpW3NoPhx+Y7ki/wqkiBtCqIKqTxHwDUF+kZ91ZG+49BVl2h30TWb5ePPwtRsPZT+IzyFvE6+lOoN9opwk/QqMdmMAGeRNaWydHyQXJ7LE98zRMHBiwsJ4eprXwQo3d8D5VTxpDwgl2KDZE3C/GlsfCKHfWrjKsSNfrlWZtjdWTuP0OdNHWijqgCvxvXHE5igZp3+E+Vd7WDvt9Tp9RVUiXJBn3a/RHKq5/Ds4GPrsqFfXtA9Klxy3+uug508dMEna0ERezuHyqcY8hYD6+hSocaEkRzIMbjc/V6KzCddBe869n1bvpktiXohxz+VATDUaASdbn50S06X438ey1UzcCOwT8CLfXOi0n2bQvtDOvuhmHECe6AJ76G22tFx4wDfkL08w5E+O/taqvsyN7yDtEKR4ekx21N4Y+hJRfoRO1zYj1I1/hoig6B07AaHtOx5B1JabS2764mKQBYEAyCeII75PwqcsbRBxo1lBmCFnddvnFUbEYGMoB4gE+fClMm8sJ4TRlgETI5zukX8KlaEtMs208fI1ZcdI/3t2/71C4Cn8QvG4T3133UAmSIvFvDfesnE3FlledEt8eXWq/tD+UjtOvPfSL4J/Ms8pHcAR8aEuGwMMwA8Tu1M+VM4J7TM0xx9oH130MbUk7vCoRFMw4JGlgOOtVxBrYNxm27w1mtwYOLLHHS9hblUe3TgPEUsuWboR3/AANHV0gdQ6cRQcAGivQbqQGxMC9v/wCjCHO0vuoh6MdSzFUVAoIc4iDCIcmD7QsEYyGEAz1TwpnC+0IcWbaQd0vgXt/9HMfVqZxukUVc/thE2KBTtDGLq2GwOHhsIGbFVOuAgEkkU/CL7YyjZlts7fhfZt0/8zgbrfn+orc6OxzGEmbDZlbZQ2R1cAtt2K0ZkJE5WU9+6s1PtAPzbURvltnA3/8AgFEX7QJmXP8AeGCMj5GfBUFsMh1zZcEE3Vt+476KjCLCoif/ABFCqo+GzFHxCCMUIpDvMEZGM9WLEVOH0plP91g4SEg9YBnaGEGGxGIBIJEgDfSqbLiYl0w3cNJOVWOoMXi9v9VM4XROMSVCojXOUumcjUjLmzbiNPWaR2+hlC+hnpLGCpss3/uJkaf9XFjvPD+tZ6beZMA93E6+nDhWz0hsDPh7LnMRgQYvf2rzfTQxQsHCRLKscyb951JudONLLGm9nXiwurZmnZ8Rjc5QYJBPW0O7du1499M4Gxhbzmm5nT68adLbgpM+A86hbm6yQfDvplFLo6444xLYODm3fXcTTDoq7/I9nGhDFIGtjxG7vHHjQWcz9H4aUHbY7aLO879OM/GmMJ95JPZVOi8TADn2wJXKfdkEE6EjuNAd1kxpJgmZjdpodKZPdUSe2N4u1gA3HhesfadqzWzQKttDnn4TOkG4pV3I/FqfLz0tVFFEJSldElwPxTprPxq4mw3dhn6v5UL2onS0+fGZ7bURMRbnKTJi3hw4zT6Fpl7xMnx4MAdOypLi4ab8eziL+NQzgAXAuIsePGDUO5nX0vJ+EcN9YZLRxxVMGAdx0883hRBi+I3byNwkxfTw1pU4guCCdTpx7uM+VSG4Os77MO2eqb66U6ZJpIMMQHiOEHfvFtBp9Cqvir6m8E9ogn0oZZQbliDedBMjjp4bq58STAZpvBzcALkQAddPoEBf2ix+Ed9rnuuaoXHGe71uPWhoxtIPYQBobkR8/CpQge6eUwZ6p0Op42jjRBexgYhNuqRrp6bqBigFcpmN4k6ka7/rfVncn8Scs0+hir5Z1ym8c+6RFYzMfadhIJKZiI0gyPnSpx2WBBjn2869CFEfhibxfXkOfD+tExcANOcL22UjmDrF94qbghJY09o85gbXJue8aUdNoUasJ0E86fPQ2AxgypOhUTu3iYJ5rFAxehiqnL/eLr1Zm/FIkUrxivEyqutiQO3hvq6uPzLwkncfOKznQARm0kGx4cRpflUgLEkkXmZ7o4UvETi0aKkfujv59mmlVOEsXnSbdsbrRSgTeGtF7f1+FcxfcM2p/wBhuPLkIrcf0FMY9iDeSfPcOGlQcIi0UHZwb2MdsiO360pj7gTefGD50KYVBtaLp0o6xfB0/wDj4OpngnH1o+Nt2ImGHyYJU3/6ODOVpCsVCyoJBAMRbsnP6NRMQQx64eApxAnUIGXXDctLyLAZbE2kj1OH0E2U52yrkwwbw2VXxCDeQrEZJ1Cy/vQJZQY6i2eeTphyJUYc8sDBkczCW4U/sW0bW91xCqhgMwZMNOtJAUgLmJg2Wadxdl2fDC+zKljJJLZzyIhVAJvaJFpo2zbSUdWJZFJGYrdiBe4Gg7Z7KHujojijxtsLtfRxZUZy5jUu7AE5Ea5dtQzOI6tl0lSaL0auTFVYAylpGkFVMwq2OhuSTT239IIEkOVZzKESGYhiwy8rqsWPVYagisvZ9lZWygZtocFVQyWGcEMzj8EKWgG95MAXbik9DJpRpEdMYxybNdpOCTZeOLiQY3UqjMdzHtk95gwKt07tKnEVFIZcJEwQw0ZkksVtcZmaD86R2dSDYCN9r+JFadIrhTdJml94UWtI1EHfxNCOKJFuf4h4TVDiRMgACLkgax2T86WKEDqiBvuxnx9daidbXwbXaBBgkwbmTFtQNKlcaZgNpMyB8KTRWeYJ7wwE+F6vhKRENbkp9ctZfhNr6MO7EdUtBBmZPwFqqA1yxK5fSNTaw+VUfFExBMzeCIt/BU/eBqCIHZfdGn1FagJfDnEiZB4WM3jiKTDnWTrvJ4wNF+ppnaMYFYO+x3W8KTaJi1t17gzG76iqRROa2NJmVdATc2MSdTqPWhYmJC9Y2MCSxb3jF+PCgsoNstjzIjfNlq7PEXIud73sbe7391MkTa+BTtHA8PxEWnn6VXHx/dJMX4DUjju+hVXxxbqs1xoWt1hfTdr40d9oUQcwQSJ6pvNoNrXIv86OgO63YIuZFxEHVlHCBG/4d9SoIOo63Z7wFySDvEa8KLtF1Ni0QQOsJIgiDuNq7E0B0gybsZG8fXCiCgcnrKynK3757xDNYaaa0NiJy3OaYggWgWlTf1vyqcVkIzZQxF16zC8bjG+fOquyn3WieJbdqInt0/3KEbo5MMyCQbadaR26GoIIgMxzdpCnuI+dERVPWESJEyeOhldJjdXMxi3VJ4gEW1BBGnZTAbXZS0WMHW/HugE99cXSD+LkSe20jw3dlQrCSTlzDUAxPCfrfVTitFhB5GTbddfSsakXOMDpEb9Z8BI7qIgUkMADbUEihridYTAYiBO//LuokkgypB7AR6Caxr/QrIRvAXt+BHxi1VI5zvF/Q7qXSEuUK8dQJ43w7GrJiAiQIPEiY4R1b+NH8NrsLiIrjrqCeLWb9Sx4GaQ2josD3DJ3BjB7jME9sU1C+9YcTNvGLTUosCFUgbrSvLXd2EUGjafZhvsrg/lI1H1rVhtMNFhfjp/St5MYkQwK/wAQzJ38PLvpTH6LDSVbLzC5l9ZHpSuIjh8FhjzIix3AA62PwFVOINzgC1o5dlKY/RuIpmZB3rcR2/OghiLM16SmI1JdnqU6POzOgxEVRM5STmcDWGAiOc99eiO2Jkzs7ENYg4jFjNnDKXIAIVZkkD2ti2W6OFteAQQjYuzFtUK+3wT2qVzeKtVzsYUZs+wou/EzM03uFwZPXjcVgSIFMk10dDcXVoS2fBJlsJBAmWkhVF/edrDvNMYChjlzNiOdFwJJPa5Fu1Q4q+N0hs9iTjbSw0zAphDmiKM0cpUUHaem8RlKgnDX8mEmRT22lv8AETQpLsZ2+kPNhrhE+0ZNmOhTDb2m0EcGYHqTzZRxFZW0dLKqnD2dDhI1nYvOKw/ebcDHurA1maz2xGAJJMcAAQPEX7qocY6AsZ/hFMJVELiqDY6fv/1on3sgg3cmwA0jnu76VDuGjrZdSxKSTwG/vI4VZ8cBo60ngAdOwW1FBpDRcrtGk7rYkIO0nU2tburm7gORYedAwBJBOYkae7buG/nXIzyS2YbgOrpx6pmTUW60ehH+lYVccCRlMcSWvxiRpXYm1AiBAOmpMd1DzsSQoYka+7r2lrnlQ2w3VZVXY8CwHfM99CgNFmMwOue0sPP61qzYQAABCjdJMdwtVsBGA6xYnuie42q0EgMCSAZ3d1jr38jW0ZIGcGASTM8C3kI+jSyYVgScpOouT2T/ALUbFdy6wSFnrWTgdBEzMVZ3ABksABy9Iqkao5p22Dw16058wFo4Ge3X50VHlojQTJVtTIgd0X51fDwwAbG5JOlyTJ143tQHGIHaFYKIj3JmLxOo0862zJL2FxyIHXykkR1WvBBI5yARQtqC5CYzQNCrQSNN1C2kmVLBx1hlMLrB+BOtEyuYMNPIJbxNER0SkxaOzrW8YHGibM4jXPBvKknU2PGD6VXZ0YAZ0YtvIKgdoAao9qitADgm/vWk66P9d9MkK38ILSSuRBGnUJkAA20ihNs5D5jlAMDKVtI4SbWou14rlT7MsH3dZTcbrudfjV3xVYQwcXuJBgzO5uNH/RX/AMFsU5BmVFJtIAgxxsLx8Kq+1FgCFKxvIbLHAg7reNMYLqZyza24EWHE8/OhPnDAiXBEEdSQdxm0jW30Dr6LTfoouMDByAzvBIHHhV8MqZlchH75+QHjzoiGBYEC5Okg6mAD6VKMzAFZIIkGwtrprWHVnDFSAGyE8Y1jfE+lWfaUW4AI35TpzAiT8JqjoxUBwZEHMI1G8ax9d9HcC7F7cQsDmSFt4VhdF4GucgfxGR2mRbtqVwxFjbd1rd17CuYWsW5yoM9hC+tWwXIuC0RpGncBRWwul0hRnudLG4YgfpM3HjXYW1KLKQP8dNYu1kEAzf8AdYyO20+dLYuIWYyhBOjKjSOTanjrIpqEuuy6bRJ1He5M27KKjkGdDyYkeEVCPG8/pI8gK49bTKePVbTXuoUzckX9pfN7pOpAJnmQd/6qGcIN1siPP4oKz22uedWTBBOjDllkdxj41f7onCOUH5Urf4UUddin3lb9fTUZePLLauzTeSR/CfSKmuqZ0cVRDOx952AkRE7oN5Fp0+VSuOpJALnjEnfxnlXV1FE32SEA60Yk9hnzNEwIN2OJf8I9Tvnyrq6iAJnw5jLiTrALkx3GqumGOtled5jEmPo1NdWAC2cg9br8QCMS3LjN/reVHRpUs5aLicSYJ3jhXV1CSQYZJJ6GMPCVRAzgC8AYnbw1oOFnkktiQbhcrb9BOW9dXVI7Yst7QaHPJFhlbTSdOevOqPiRA63YA1+yRXV1GKJ5JNICiuEBJbNEkZTad1luRaq4hMQwcGbdX3iLwDHwrq6mIhRivoc3g0/6daU2fFxMoLl5IkyrandpY8q6urC+wbYi6u2IGHuyLTynlTILkWLgnSzTr/D2V1dTAfYxsolFLl80AsIxJkqDlta01LphjrNnECMxGLaYm5PIa11dTEvZGOilSFD5iDlMPMxY3N/9qSww8DquD36jvvXV1YzOXBKy3XHE9fdO7vqrZmWUZpNwYaD5d011dREUmN4ZzDrI47nP+mavmVQYVxx6uIB9f1rq6sPYu+1ysozcZGcg8rjQ8qNgY1sx9oDwKsf/AM11dQHSJTKtgxA4da3YCunLlQMchoZMRrHicrcjAt21NdRMQcdSCDI3EFT8Fg9oNcmOBA9o9uI4dq376murcmbimQ+1SJR80arCyewhbHtEVyOjiZdTuJAVhv3rXV1MuhHFJhBjKDBfzHpkqX2sAwrrH1zHpXV1Cwn/2Q==);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Welcome Back</a>
+                                                        </div>
+                                                        <p>After two difficult years taking WUMUNS to an online format,
+                                                               we are thrilled to announce WUMUNS is back in-person.</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card mid-mid">
+                                          <article
+                                                 style="background-image: url(https://www.un.org/sites/un2.un.org/files/styles/3x2-front-thumbnail/public/field/image/model_un_landing_page.jpg?itok=ahxbap4S);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>About the symposium</a>
+                                                        </div>
+                                                        <p>Since 2006, the WU International Relations Council has led
+                                                               its' premier high-school level Modal United Nations
+                                                               conference</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card mid-right">
+                                          <article
+                                                 style="background-image: url(https://financialaid.wustl.edu/wp-content/uploads/2019/07/HDR_PBAF5537_051.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Breaking down financial barriers</a>
+                                                        </div>
+                                                        <p>Expense should not prevent your delegation from attending
+                                                               WUMUNS. Learn more about Financial Aid options and how to
+                                                               apply.</p>
+                                                 </div>
+                                          </article>
                                    </div>
                             </div>
-                            <div class="nav-content__card head-left">
-                                   <article style="background-image: url(https://chickenoutchicken.com/wp-content/uploads/2020/09/chicken-out-spicy-1600x1000.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Where to eat while you're here</a>
-                                          </div>
-                                          <p>We compiled recommendations from various staffers of WUMUNS. A trip to St. Louis would not be complete without these favorites.</p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card head-mid">
-                                   <article style="background-image: url(https://www.theparkwayhotel.com/sites/default/files/styles/page_hero/public/hero-images/1.jpg?itok=TqJQxufG);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Parkway Hotel Information</a>
-                                          </div>
-                                          <p>Preview your hotel arrangements in St. Louis' historic Central West End</p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card head-right">
-                                   <article style="background-image: url(https://wustl.edu/wp-content/uploads/2020/06/WashU_night_drone_5.20-2-600x400.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Start your college search at WashU</a>
-                                          </div>
-                                          <p>Washington University is ranked #14 nationally, #12 best in Political Science, with an industry leading medical school.</p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card foot-left">
-                                   <article style="background-image: url(https://www.boardeffect.com/wp-content/uploads/2018/03/Roberts-Rules-Cheat-Sheet-for-Nonprofits.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Guide to Parliamentary Procedure</a>
-                                          </div>
-                                          <p></p>
-                                   </div></article>
-                            </div>
-                     </div>
 
-                     <!-- Committees -->
-                     <div class="nav-content__selection" style="display: none;">
-                            <div class="nav-content__list head-left">
-                                   <div class="nav-content__list-heading">
-                                          WUMUNS XVI Committee List
+                            <!-- in St. Louis -->
+                            <div class="nav-content__selection" style="display: none;">
+                                   <div class="nav-content__note mid-right">
+                                          <div class="graphic image"
+                                                 style="background-image: url(https://localist-images.azureedge.net/photos/30971134930856/hero/52e506523ab36519dfe586d53509d02092ac071c.jpg);">
+                                                 <a href="https://wustl.edu/" class="wrap">
+                                                        <img src="https://dl.boxcloud.com/api/2.0/internal_files/847256047432/versions/909004496632/representations/png_paged_2048x2048/content/1.png?access_token=1!U9fYLitBqdp-EiewkZHsp_rBwQxcHYXn6s2hC267GI34ostgJmwl8li-XkwkhaVcxsmpBKVnYPAbKn0rOJiuGULH6Vsr7XrLWubPbN5XayWJyrm_RcEHoTKQQEiY2iDFfkEwY6mfpe0dk2HUFEKMp7lVaHSzwqPjbznL0V8mvkftfbsMDPovxS3dhvd29eQyEeAK0RR3s4hL3WvckuwrJCbUKROA__X2ZIKs8yAfemcon5MOHGdUQcWSls8Tvzug8deL1bb9Ih8fXqZKlgegWGWUKkxJsBmrGrg7YtB0xid-XxIR6yryJ_Zj0TrBJ6ClQAm88jR-NutB3upYnshX5NRwZChVDWOGhD6eu2j-BenEL_ALQJkQdz8mGT2WNK1WnM44Glr-NLRMQuLh1LuYebubm7jA5CQktdDPHg8iWc3kI3swB6ZMdMaQkAIDx391YY9FH4BbDlwAzI174ePc0OGkD1kV36X4VLJrxSie7cS06aOw86QIrQmizZHrsQIydyxmim92dGdSi4O0PRHp7nCLTLI0NpoTfq_kK3gBNigpb2y1lzPkjmHqrafY_uVq5QhCd_npCzhcmih2LfKfF4G-LOMm8pMxuBr0OB7xWjxnpHcMXQ6U3bh6k202wG0n99G4ulPgCSNzQSz9eDIctfxv3TNs_RTajwBWjWUZE7DlXF_K3aQR-N7sFhCiu3lguA3H7ssyeBmfUqlYYYRE7kbwZOvsert4FWquD6KDx47wRClSjyNwI3wFbw..&shared_link=https%3A%2F%2Fwustl.app.box.com%2Fs%2Fkods33dj1hu24azctxnbvh8mbfm1q9hc&box_client_name=box-content-preview&box_client_version=2.81.0"
+                                                               alt="">
+                                                 </a>
+                                          </div>
                                    </div>
+                                   <div class="nav-content__card head-left">
+                                          <article
+                                                 style="background-image: url(https://chickenoutchicken.com/wp-content/uploads/2020/09/chicken-out-spicy-1600x1000.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Where to eat while you're here</a>
+                                                        </div>
+                                                        <p>We compiled recommendations from various staffers of WUMUNS.
+                                                               A trip to St. Louis would not be complete without these
+                                                               favorites.</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card head-mid">
+                                          <article
+                                                 style="background-image: url(https://www.theparkwayhotel.com/sites/default/files/styles/page_hero/public/hero-images/1.jpg?itok=TqJQxufG);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Parkway Hotel Information</a>
+                                                        </div>
+                                                        <p>Preview your hotel arrangements in St. Louis' historic
+                                                               Central West End</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card head-right">
+                                          <article
+                                                 style="background-image: url(https://wustl.edu/wp-content/uploads/2020/06/WashU_night_drone_5.20-2-600x400.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Start your college search at WashU</a>
+                                                        </div>
+                                                        <p>Washington University is ranked #14 nationally, #12 best in
+                                                               Political Science, with an industry leading medical
+                                                               school.</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card foot-left">
+                                          <article
+                                                 style="background-image: url(https://www.boardeffect.com/wp-content/uploads/2018/03/Roberts-Rules-Cheat-Sheet-for-Nonprofits.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Guide to Parliamentary Procedure</a>
+                                                        </div>
+                                                        <p></p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                            </div>
 
-                                   <!-- <div class="nav-content__list-heading">
+                            <!-- Committees -->
+                            <div class="nav-content__selection" style="display: none;">
+                                   <div class="nav-content__list right">
+                                          <div class="nav-content__list-heading">
+                                                 Last Year's Committee List
+                                          </div>
+
+                                          <!-- <div class="nav-content__list-heading">
                                           Middle World
                                    </div> -->
-                                   <div class="nav-content__list-item extra-space">
-                                          <a href="">Nigerian Civil War</a>
-                                          <span class="material icon">chevron_right</span>
-                                   </div>
-                                   <div class="nav-content__list-item">
-                                          <a href="">Pharoah Akhenaten</a>
-                                          <span class="material icon">chevron_right</span>
-                                   </div>
-                                   <div class="nav-content__list-item">
-                                          <a href="">Triple Alliance</a>
-                                          <span class="material icon">chevron_right</span>
-                                   </div>
+                                          <div class="nav-content__list-item extra-space">
+                                                 <a href="">Nigerian Civil War</a>
+                                                 <span class="material icon">chevron_right</span>
+                                          </div>
+                                          <div class="nav-content__list-item">
+                                                 <a href="">Pharoah Akhenaten</a>
+                                                 <span class="material icon">chevron_right</span>
+                                          </div>
+                                          <div class="nav-content__list-item">
+                                                 <a href="">Triple Alliance</a>
+                                                 <span class="material icon">chevron_right</span>
+                                          </div>
 
-                                   <!-- <div class="nav-content__list-heading">
+                                          <!-- <div class="nav-content__list-heading">
                                           East Asian
                                    </div> -->
-                                   <div class="nav-content__list-item">
-                                          <a href="">Kowloon Walled City</a>
-                                          <span class="material icon">chevron_right</span>
-                                   </div>
-                                   <div class="nav-content__list-item">
-                                          <a href="">North Korea 2011</a>
-                                          <span class="material icon">chevron_right</span>
-                                   </div>
-                                   <div class="nav-content__list-item">
-                                          <a href="">Boxer Rebellion</a>
-                                          <span class="material icon">chevron_right</span>
-                                   </div>
+                                          <div class="nav-content__list-item">
+                                                 <a href="">Kowloon Walled City</a>
+                                                 <span class="material icon">chevron_right</span>
+                                          </div>
+                                          <div class="nav-content__list-item">
+                                                 <a href="">North Korea 2011</a>
+                                                 <span class="material icon">chevron_right</span>
+                                          </div>
+                                          <div class="nav-content__list-item">
+                                                 <a href="">Boxer Rebellion</a>
+                                                 <span class="material icon">chevron_right</span>
+                                          </div>
 
-                                   <!-- <div class="nav-content__list-heading">
+                                          <!-- <div class="nav-content__list-heading">
                                           Domestic
                                    </div> -->
-                                   <div class="nav-content__list-item">
-                                          <a href="">U.S. Balance of Power</a>
-                                          <span class="material icon">chevron_right</span>
+                                          <div class="nav-content__list-item">
+                                                 <a href="">U.S. Balance of Power</a>
+                                                 <span class="material icon">chevron_right</span>
+                                          </div>
+                                          <div class="nav-content__list-item">
+                                                 <a href="">Chicago-1968</a>
+                                                 <span class="material icon">chevron_right</span>
+                                          </div>
                                    </div>
-                                   <div class="nav-content__list-item">
-                                          <a href="">Chicago-1968</a>
-                                          <span class="material icon">chevron_right</span>
+                                   <div class="nav-content__card head-left">
+                                          <article
+                                                 style="background-image: url(https://wumuns.com/wp-content/uploads/2018/02/Advantages-1.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Fast-paced, Engaging Crisis Debate</a>
+                                                        </div>
+                                                        <p>We take pride in our focus on small, crisis committees
+                                                               designed to engage and encite each delegate.</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card head-mid">
+                                          <article
+                                                 style="background-image: url(https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Leading Committee Immersion</a>
+                                                        </div>
+                                                        <p>A completed presentation overhaul, personalizes committee
+                                                               design from preparing online to the committee room.</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card foot-left">
+                                          <article>
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Schedule</a>
+                                                        </div>
+                                                        <p></p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card foot-mid">
+                                          <article>
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Midnight Crisis</a>
+                                                        </div>
+                                                        <p>Many committee members this year will recieve crisis reports at their hotel door in the middle of the night. Here is what to expect.</p>
+                                                 </div>
+                                          </article>
                                    </div>
                             </div>
-                     </div>
 
-                     <!-- Workshops -->
-                     <div class="nav-content__selection" style="display: none;">
-                            <div class="nav-content__card head-left">
-                                   <article style="background-image: url(https://assets.teenvogue.com/photos/6111a5b258f85866488bd921/master/pass/DSC03181.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Meet Guest Speaker Mayor Tishaura Jones</a>
-                                          </div>
-                                          <p>WUMUNS 15 Guest Speaker is social worker, WashU graduate, and Mayor of St. Louis.</p>
-                                   </div></article>
+                            <!-- Workshops -->
+                            <div class="nav-content__selection" style="display: none;">
+                                   <div class="nav-content__card head-left">
+                                          <article
+                                                 style="background-image: url(https://assets.teenvogue.com/photos/6111a5b258f85866488bd921/master/pass/DSC03181.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Meet Guest Speaker Mayor Tishaura Jones</a>
+                                                        </div>
+                                                        <p>WUMUNS 15 Guest Speaker is social worker, WashU graduate, and
+                                                               Mayor of St. Louis.</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card head-mid">
+                                          <article
+                                                 style="background-image: url(https://students.wustl.edu/wp-content/uploads/2018/09/CDI-graduate-and-professional-student-advisory-council-568x319.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Diversity & Inclusion</a>
+                                                        </div>
+                                                        <p></p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card head-right">
+                                          <article
+                                                 style="background-image: url(https://andrewdmartin.wustl.edu/files/2019/10/campus.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Danforth Campus Tours</a>
+                                                        </div>
+                                                        <p>Washington University is ranked #14 nationally, #12 best in
+                                                               Political Science, with an industry leading medical
+                                                               school.</p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card foot-left">
+                                          <article
+                                                 style="background-image: url(https://www.boardeffect.com/wp-content/uploads/2018/03/Roberts-Rules-Cheat-Sheet-for-Nonprofits.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Guide to Parliamentary Procedure</a>
+                                                        </div>
+                                                        <p></p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card foot-mid">
+                                          <article
+                                                 style="background-image: url(https://bestdelegate.com/wp-content/uploads/2017/01/crisis.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>What is Crisis?</a>
+                                                        </div>
+                                                        <p></p>
+                                                 </div>
+                                          </article>
+                                   </div>
+                                   <div class="nav-content__card foot-right">
+                                          <article
+                                                 style="background-image: url(https://bestdelegate.com/wp-content/uploads/2020/01/73333424_3236834096357247_4946619400804368384_o.jpg);">
+                                                 <div class="wrap">
+                                                        <div class="article__title">
+                                                               <a>Delegate Best Practices</a>
+                                                        </div>
+                                                        <p></p>
+                                                 </div>
+                                          </article>
+                                   </div>
                             </div>
-                            <div class="nav-content__card head-mid">
-                                   <article style="background-image: url(https://students.wustl.edu/wp-content/uploads/2018/09/CDI-graduate-and-professional-student-advisory-council-568x319.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Diversity & Inclusion</a>
-                                          </div>
-                                          <p></p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card head-right">
-                                   <article style="background-image: url(https://andrewdmartin.wustl.edu/files/2019/10/campus.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Danforth Campus Tours</a>
-                                          </div>
-                                          <p>Washington University is ranked #14 nationally, #12 best in Political Science, with an industry leading medical school.</p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card foot-left">
-                                   <article style="background-image: url(https://www.boardeffect.com/wp-content/uploads/2018/03/Roberts-Rules-Cheat-Sheet-for-Nonprofits.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Guide to Parliamentary Procedure</a>
-                                          </div>
-                                          <p></p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card foot-mid">
-                                   <article style="background-image: url(https://bestdelegate.com/wp-content/uploads/2017/01/crisis.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>What is Crisis?</a>
-                                          </div>
-                                          <p></p>
-                                   </div></article>
-                            </div>
-                            <div class="nav-content__card foot-right">
-                                   <article style="background-image: url(https://bestdelegate.com/wp-content/uploads/2020/01/73333424_3236834096357247_4946619400804368384_o.jpg);"><div class="wrap">
-                                          <div class="article__title">
-                                                 <a>Delegate Best Practices</a>
-                                          </div>
-                                          <p></p>
-                                   </div></article>
-                            </div>
-                     </div>
 
-                     <!-- Secretariat -->
-                     <div class="nav-content__selection" style="display: none;"></div>
-                     <div class="nav-content__selection" style="display: none;"></div>
-              </section>
-       </div></nav>
+                            <!-- Secretariat -->
+                            <div class="nav-content__selection" style="display: none;"></div>
+
+                            <!-- Partners -->
+                            <div class="nav-content__selection" style="display: none;"></div>
+                     
+                     </section>
+              </div>
+       </nav>
 
        <!-- JavaScript Functionality for Header -->
        <script>
@@ -311,20 +423,20 @@
                             contentList.children[i].after(newIcon);
                      }
               }
-              catch(err) {
+              catch (err) {
 
               }
 
               // Opening Navigation View
-              document.getElementById('header__site-wordmark').addEventListener("click", function() {
+              document.getElementById('header__site-wordmark').addEventListener("click", function () {
                      document.getElementById('js-nav').classList.add("open");
                      document.getElementById('js-nav-exit').style.display = 'flex';
                      document.getElementById('nav__nav-content').style.display = 'grid';
 
                      try {
-                            document.getElementById('header__page-contents').style.display = "none"; 
+                            document.getElementById('header__page-contents').style.display = "none";
                      }
-                     catch(err) {
+                     catch (err) {
 
                      }
                      finally {
@@ -334,15 +446,15 @@
                             }
                      }
 
-                     setTimeout(function() {
+                     setTimeout(function () {
                             document.getElementById('js-nav-focus').classList.add('js-color-red-accent');
                             document.getElementById('js-nav-focus').classList.add('js-hover');
                      }, 1000);
-                     setTimeout(function() {
+                     setTimeout(function () {
                             document.getElementById('js-nav-focus').classList.remove('js-color-red-accent');
                             document.getElementById('js-nav-focus').classList.remove('js-hover');
                      }, 2200);
-                     
+
               });
 
               // Operating Navigation Content
@@ -354,7 +466,7 @@
                                    // console.log(document.getElementById('nav__nav-content').children[i]);
                                    document.getElementById('nav__nav-content').children[i].style.display = 'none';
                                    document.getElementById('nav__nav-list').children[i].children[0].classList.remove('js-hover');
-                                   
+
                             }
                      }
                      document.getElementById('nav__nav-list').children[a].children[0].classList.add('js-hover');
@@ -363,7 +475,7 @@
 
 
               // Closing Navigation View
-              document.getElementById('js-nav-exit').addEventListener("click", function() {
+              document.getElementById('js-nav-exit').addEventListener("click", function () {
                      document.getElementById('js-nav').classList.remove('open');
                      document.getElementById('js-nav-exit').style.display = "none";
                      document.getElementById('nav__nav-content').style.display = "none";
@@ -371,7 +483,7 @@
                      try {
                             document.getElementById('header__page-contents').style.display = "flex";
                      }
-                     catch(err) {
+                     catch (err) {
 
                      }
                      finally {
@@ -386,4 +498,5 @@
 
        </script>
 </body>
+
 </html>
