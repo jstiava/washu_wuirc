@@ -440,7 +440,7 @@
                                                  </div>
                                           </article>
                                    </div>
-                                   <div class="nav-content__card head-center">
+                                   <div class="nav-content__card head-mid">
                                           <article
                                                  style="background-image: url(https://students.wustl.edu/wp-content/uploads/2018/09/CDI-graduate-and-professional-student-advisory-council-568x319.jpg);">
                                                  <div class="wrap">
@@ -496,14 +496,22 @@
                             }
                      }
 
+                     // Adds hover effect
                      setTimeout(function () {
-                            document.getElementById('js-nav-focus').classList.add('js-color-red-accent');
                             document.getElementById('js-nav-focus').classList.add('js-hover');
                      }, 1000);
+
+                     // Removes hover effect
                      setTimeout(function () {
-                            document.getElementById('js-nav-focus').classList.remove('js-color-red-accent');
                             document.getElementById('js-nav-focus').classList.remove('js-hover');
                      }, 2200);
+
+                     // Shorten delay times for elements in first nav index content
+                     setTimeout(function() {
+                            for (var i = 0; i < document.getElementById('nav__nav-content').children[0].children.length; i++) {
+                                   document.getElementById('nav__nav-content').children[0].children[i].classList.add('delay_change');
+                            }
+                     }, 2000)
 
               });
 
@@ -512,8 +520,6 @@
                      var a = parseInt(a);
                      for (var i = 0; i < document.getElementById('nav__nav-list').children.length; i++) {
                             if (!(i == a)) {
-                                   // console.log(document.getElementById('nav__nav-content').children);
-                                   // console.log(document.getElementById('nav__nav-content').children[i]);
                                    document.getElementById('nav__nav-content').children[i].style.display = 'none';
                                    document.getElementById('nav__nav-list').children[i].children[0].classList.remove('js-hover');
 
@@ -521,14 +527,6 @@
                      }
                      document.getElementById('nav__nav-list').children[a].children[0].classList.add('js-hover');
                      document.getElementById('nav__nav-content').children[a].style.display = 'grid';
-
-                     setTimeout(function() {
-                            for (var i = 0; i < document.getElementById('nav__nav-content').children[0].children.length; i++) {
-                                   // document.getElementById('nav__nav-content').children[0].children[i].style.animationDelay = 
-                                   // eval(document.getElementById('nav__nav-content').children[0].children[i].style.animationDelay - '0.95');
-                                   console.log(document.getElementById('nav__nav-content').children[0].children[i].classList.add('delay_change'));
-                            }
-                     }, 1250)
               }
 
 
@@ -547,10 +545,6 @@
                      finally {
                             changeNavContent('0');
                             document.getElementById('nav__nav-list').children[0].children[0].classList.remove('js-hover');
-                     }
-
-                     for (var i = 0; i < document.getElementById('nav__nav-content').children[0].children.length; i++) {
-                            console.log(document.getElementById('nav__nav-content').children[0].children[i].classList.remove('delay_change'));
                      }
               });
        </script>

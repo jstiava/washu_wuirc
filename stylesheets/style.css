@@ -17,6 +17,13 @@
   --space-head: 55px;
   --space-nav: 50px;
 }
+@media screen and (max-width: 75em) {
+  :root {
+    --space-head: 30px;
+    --space-head-full: 140px;
+    --space-nav: 30px;
+  }
+}
 
 /* Animations */
 @keyframes popIn {
