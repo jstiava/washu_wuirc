@@ -822,6 +822,10 @@ article:hover a {
   /* Animation */
   transition: background-size 350ms ease-in-out;
 }
+article h6 {
+  margin-top: 5px;
+  color: rgb(201, 201, 201) !important;
+}
 article p {
 
   /* Sizing */
@@ -1051,6 +1055,7 @@ article p {
 
 }
 .nav-content__desc p {
+  width: 90%;
   margin: 0;
   padding: 10px 0 0 0;
 
