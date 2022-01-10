@@ -196,9 +196,10 @@ nav {
 
   /* Background */
   /* background-image: url(https://wumuns.com/wp-content/uploads/2018/02/St.Louis_.jpg); */
-  background-image: url(https://lv7ms1pq6dm2sea8j1mrajzw-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/WUSTL-1200x675.jpg);
+  /* background-image: url(https://lv7ms1pq6dm2sea8j1mrajzw-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/WUSTL-1200x675.jpg); */
   background-size: cover;
   background-position: top;
+  background-color: rgb(20, 20, 20);
 
   /* Interactive */
   animation: 0.5s popIn ease-in-out;
@@ -229,8 +230,8 @@ nav > .wrap {
   margin: 0;
 
   /* Background */
-  background-color: #00000099;
-  background-image: linear-gradient(#00000050, #00000099);
+  /* background-color: #00000099; */
+  /* background-image: linear-gradient(#00000050, #00000099); */
   background-size: cover;
 
   /* Text */
@@ -509,7 +510,7 @@ nav > .wrap {
 
 /* Desc */
 .nav-content__desc.foot-left {
-  grid-area: 7 / 1 / 11 / 1;
+  grid-area: 7 / 1 / 13 / 1;
 }
 
 /* Food-single cards */
